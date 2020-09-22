@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    Hello World
+    <img src="./assets/logo.png" title="Les carnets de Jo">
   </div>
 </template>
 
