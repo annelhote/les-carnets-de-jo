@@ -25,23 +25,25 @@
         </b-nav-item>
       </b-nav>
     </div>
-    <div class="row">
-      <div class="col-6">
-        <div>
-          Les carnets de Jo
-        </div>
-        <div>
-          Association d'intérêt général dédiée à l'éducation par le sport !
-        </div>
-        <div>
-          <div>
-            # Apprendre
+    <div class="app_section1 row m-5">
+      <div class="col-6 d-flex">
+        <div class="w-50 text-center m-auto">
+          <div class="app__section1__title text-uppercase">
+            Les carnets de Jo
           </div>
-          <div>
-            # Jouer
+          <div class="font-weight-bold">
+            Association d'intérêt général dédiée à l'éducation par le sport !
           </div>
-          <div>
-            # Grandir
+          <div class="text-uppercase font-weight-bold mt-3">
+            <div>
+              #Apprendre
+            </div>
+            <div>
+              #Jouer
+            </div>
+            <div>
+              #Grandir
+            </div>
           </div>
         </div>
       </div>
@@ -58,8 +60,19 @@ export default {
 }
 </script>
 
-<style scoped>
-.app__nav {
-  background-color: #fdc500;
+<style lang="scss" scoped>
+.app {
+  &__nav {
+    background-color: #fdc500;
+
+    .nav-link {
+      color: black;
+    }
+  }
+
+  &__section1__title {
+    color: #00759b;
+    font-size: 5rem;
+  }
 }
 </style>
