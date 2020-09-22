@@ -19,3 +19,8 @@ yarn run build
 ```
 yarn run lint
 ```
+
+### Deploy on gh-branches
+```
+yarn deploy
+```
