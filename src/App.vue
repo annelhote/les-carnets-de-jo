@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <div class="m-3 text-center">
-      <img src="./assets/logo.png" title="Les carnets de Jo">
+      <img src="./assets/logo.png" title="Les carnets de Jo" width="192">
     </div>
-    <div class="app__nav text-center">
+    <div class="app__nav text-center bg-warning">
       <b-nav align="center text-uppercase">
         <b-nav-item>
           Accueil
@@ -25,10 +25,10 @@
         </b-nav-item>
       </b-nav>
     </div>
-    <div class="app_section1 row m-5">
+    <section class="app__section app__section1 row no-gutters">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
-          <div class="app__section1__title text-uppercase">
+          <div class="app__section1__title title text-uppercase">
             Les carnets de Jo
           </div>
           <div class="font-weight-bold">
@@ -48,9 +48,199 @@
         </div>
       </div>
       <div>
-        <img src="./assets/pencil_case.png" title="Trousses et feutres">
+        <img src="./assets/pencil_case.jpg" title="Trousses et feutres" width="843">
       </div>
-    </div>
+    </section>
+    <section class="app__section app__section2 bg-warning">
+      <div>
+        <div class="app__section2__title font-weight-bold">
+          Qui sommes-nous ?
+        </div>
+        <div class="app__section2__content mt-3">
+          Convaincus que le sport est source d'inspiration et d’épanouissement de la jeunesse,
+          Les Carnets de Jo est une association qui met en place des actions et développe des outils pédagogiques
+          et ludiques autour du sport pour favoriser la réussite éducative et l’insertion sociale des jeunes,
+          particulièrement dans les quartiers prioritaires de la politique de la ville.<br><br>
+          Grâce à des bénévoles d’horizons différents et à un réseau d’athlètes français qui ont en commun
+          la passion du sport et la conviction que le sport et ses valeurs sont de formidables leviers pour
+          renforcer l’égalité des chances et la cohésion sociale, l'association a pour vocation de développer
+          l'impact éducatif du sport et s’adresse à la jeunesse pour lui donner envie de bouger mais aussi
+          d’apprendre, de créer, de s’éveiller et de grandir grâce au sport.<br><br>
+          Conscients que le sport ne peut pas tout résoudre, qu'il n'est ni magique pour la société,
+          ni éducatif par nature, nous faisons le pari qu'avec de l'énergie à revendre, un réseau de professionnels
+          et d'experts, des outils innovants et des expérimentations sur le terrain, nous participerons à révéler
+          son potentiel éducatif comme moyen au service de l'éducation de demain.
+        </div>
+        <div class="app__section2__button mt-3">
+          <b-button variant="dark" pill>
+            En savoir plus
+          </b-button>
+        </div>
+      </div>
+    </section>
+    <section class="app__section app__section3 text-center">
+      <div class="app__section3__title title text-uppercase">
+        Demander une intervention
+      </div>
+      <div class="app__section3__subtitle font-weight-bold">
+        <div>
+          Une idée vous trotte dans la tête...
+        </div>
+        <div>
+          L'envie de vous lancer dans un projet d'éducation par le sport,
+        </div>
+        <div>
+          mais vous ne savez pas par où commencer ?
+        </div>
+      </div>
+      <div class="app__section3__cards mt-3">
+        <b-card-group deck>
+          <b-card
+              title="Je suis une école"
+              img-src="./assets/school.png"
+              img-alt="Ecole"
+              img-top
+              bg-variant="dark"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+          <b-card
+              title="Je suis une collectivité locale"
+              img-src="./assets/city.png"
+              img-alt="City"
+              img-top
+              bg-variant="primary"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+          <b-card
+              title="Je suis un club sportif"
+              img-src="./assets/sport.png"
+              img-alt="Sport"
+              img-top
+              bg-variant="danger"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+          <b-card
+              title="Je suis une association"
+              img-src="./assets/association.png"
+              img-alt="Ecole"
+              img-top
+              bg-variant="dark"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+          <b-card
+              title="Je suis une bibliothèque"
+              img-src="./assets/library.png"
+              img-alt="Ecole"
+              img-top
+              bg-variant="primary"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+          <b-card
+              title="Je suis un centre de loisir"
+              img-src="./assets/entertainment.png"
+              img-alt="Ecole"
+              img-top
+              bg-variant="danger"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+          <b-card
+              title="Je suis ce que je suis"
+              img-src="./assets/me.png"
+              img-alt="Ecole"
+              img-top
+              bg-variant="dark"
+              text-variant="white"
+              body-class="py-5 d-flex"
+          ></b-card>
+        </b-card-group>
+      </div>
+      <div class="app__section3__button mt-3">
+        <b-button variant="primary" pill>
+          Nous contacter
+        </b-button>
+      </div>
+    </section>
+    <section class="app__section app__section4 bg-warning">
+      <div class="app__section4__image">
+        QUOTE
+      </div>
+      <div class="app__section4__content font-weight-bold mt-3">
+        « L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
+        et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
+        du respect de la jeunesse.<br><br>
+        Ces deux éléments participent à créer
+        une société plus juste et fraternelle.»
+      </div>
+      <div class="app__section4__author font-weight-bold font-italic mt-3">
+        Nelson Mandela
+      </div>
+    </section>
+    <section class="app__section app__section5">
+      <div class="app__section5__title title text-uppercase text-center">
+        Nous soutenir
+      </div>
+      <div class="app__section5__cards mt-3">
+        <b-card-group deck>
+          <b-card
+              title="Je parraine des ateliers"
+              img-src="./assets/hand.png"
+              img-alt="Parrainage"
+              img-top
+              body-class="py-5 bg-dark text-light">
+            <b-card-text>
+              Et j'agis positivement sur la vie locale!
+            </b-card-text>
+            <b-button href="#" variant="light" pill>
+              Nous contacter
+            </b-button>
+          </b-card>
+          <b-card
+              title="J'adhère"
+              img-src="./assets/five.png"
+              img-alt="Adhésion"
+              img-top
+              body-class="py-5 bg-primary text-light">
+            <b-card-text>
+              Et je participe à la vie de l'association!
+            </b-card-text>
+            <b-button href="#" variant="light" pill>
+              Adhérer
+            </b-button>
+          </b-card>
+          <b-card
+              title="Je donne du temps"
+              img-src="./assets/family.png"
+              img-alt="Temps"
+              img-top
+              body-class="py-5 bg-danger text-light">
+            <b-card-text>
+              Et j'anime ou j'interviens dans des ateliers!
+            </b-card-text>
+            <b-button href="#" variant="light" pill>
+              Nous contacter
+            </b-button>
+          </b-card>
+        </b-card-group>
+      </div>
+    </section>
+    <section class="app__section app__section6 background-green">
+      <div class="bg-white font-weight-bold px-3 py-5">
+        LES CARNETS DE JO<br><br>
+        6 rue Jean-Baptiste Dumay<br>
+        75020 PARIS<br>
+        FRANCE<br><br>
+        lescarnetsdejo@gmail.com
+      </div>
+    </section>
+    <footer class="bg-warning text-center mt-5 p-3">
+      ©2020 par Les Carnets de Jo
+    </footer>
   </div>
 </template>
 
@@ -62,17 +252,69 @@ export default {
 
 <style lang="scss" scoped>
 .app {
-  &__nav {
-    background-color: #fdc500;
+  .background-green {
+    background-color: #008D67;
+  }
 
+  .title {
+    color: #00759b;
+    font-size: 5rem;
+  }
+
+  &__nav {
     .nav-link {
       color: black;
     }
   }
 
-  &__section1__title {
-    color: #00759b;
-    font-size: 5rem;
+  &__section {
+    padding: 5rem;
+
+    &2 {
+      padding-left: 30rem;
+      padding-right: 30rem;
+
+      &__title {
+        font-size: 40px;
+      }
+    }
+
+    &3 {
+      &__cards .card-deck .card {
+        border: none;
+        border-radius: unset;
+        margin-bottom: 12px;
+        min-width: 20%;
+
+        img {
+          border-radius: unset;
+        }
+
+        .card-title {
+          margin: auto;
+        }
+      }
+    }
+
+    &4 {
+      padding-left: 40rem;
+      padding-right: 40rem;
+    }
+
+    &5 {
+      &__cards .card-deck .card {
+        border: none;
+        border-radius: unset;
+
+        img {
+          border-radius: unset;
+        }
+
+        .card-title {
+          margin: auto;
+        }
+      }
+    }
   }
 }
 </style>
