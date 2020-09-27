@@ -6,26 +6,38 @@
     <div class="app__nav text-center bg-warning">
       <b-nav align="center text-uppercase">
         <b-nav-item>
-          Accueil
+          <a @click="goTo('section1')">
+            Accueil
+          </a>
         </b-nav-item>
         <b-nav-item>
-          Qui sommes nous ?
+          <a @click="goTo('section2')">
+            Qui sommes nous ?
+          </a>
         </b-nav-item>
         <b-nav-item>
-          Nos actions
+          <a @click="goTo('section3')">
+            Nos actions
+          </a>
         </b-nav-item>
         <b-nav-item>
-          Nos outils
+          <a @click="goTo('section4')">
+            Nos outils
+          </a>
         </b-nav-item>
         <b-nav-item>
-          Rejoignez-nous
+          <a @click="goTo('section5')">
+            Rejoignez-nous
+          </a>
         </b-nav-item>
         <b-nav-item>
-          Contact
+          <a @click="goTo('section6')">
+            Contact
+          </a>
         </b-nav-item>
       </b-nav>
     </div>
-    <section class="app__section app__section1 row no-gutters">
+    <section class="app__section app__section1 row no-gutters" ref="section1">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
           <div class="app__section1__title title text-uppercase text-primary">
@@ -51,7 +63,7 @@
         <img src="./assets/pencil_case.png" title="Trousses et feutres" width="843">
       </div>
     </section>
-    <section class="app__section app__section2 bg-warning">
+    <section class="app__section app__section2 bg-warning" ref="section2">
       <div>
         <div class="app__section2__title font-weight-bold">
           Qui sommes-nous ?
@@ -78,7 +90,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section3 text-center">
+    <section class="app__section app__section3 text-center" ref="section3">
       <div class="app__section3__title title text-uppercase text-primary">
         Demander une intervention
       </div>
@@ -152,7 +164,7 @@
         </b-button>
       </div>
     </section>
-    <section class="app__section app__section4 bg-warning text-center">
+    <section class="app__section app__section4 bg-warning text-center" ref="section4">
       <div class="app__section4__image">
         QUOTE
       </div>
@@ -167,7 +179,7 @@
         Nelson Mandela
       </div>
     </section>
-    <section class="app__section app__section5">
+    <section class="app__section app__section5" ref="section5">
       <div class="app__section5__title title text-uppercase text-center text-primary">
         Nous soutenir
       </div>
@@ -215,7 +227,7 @@
         </b-card-group>
       </div>
     </section>
-    <section class="app__section app__section6 bg-success">
+    <section class="app__section app__section6 bg-success" ref="section6">
       <div class="app__section6__address bg-white font-weight-bold py-5">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
@@ -232,7 +244,16 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  methods: {
+    goTo(refName) {
+      console.log('goto')
+      var element = this.$refs[refName];
+      // var top = element.offsetTop;
+      // window.scrollTo(0, top);
+      element.scrollIntoView();
+    }
+  }
 }
 </script>
 
