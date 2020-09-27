@@ -4,7 +4,6 @@ import { BootstrapVue } from 'bootstrap-vue'
 
 import './main.scss'
 
-// Install BootstrapVue
 Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false

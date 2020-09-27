@@ -28,7 +28,7 @@
     <section class="app__section app__section1 row no-gutters">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
-          <div class="app__section1__title title text-uppercase">
+          <div class="app__section1__title title text-uppercase text-primary">
             Les carnets de Jo
           </div>
           <div class="font-weight-bold">
@@ -79,7 +79,7 @@
       </div>
     </section>
     <section class="app__section app__section3 text-center">
-      <div class="app__section3__title title text-uppercase">
+      <div class="app__section3__title title text-uppercase text-primary">
         Demander une intervention
       </div>
       <div class="app__section3__subtitle font-weight-bold">
@@ -182,7 +182,7 @@
       </div>
     </section>
     <section class="app__section app__section5">
-      <div class="app__section5__title title text-uppercase text-center">
+      <div class="app__section5__title title text-uppercase text-center text-primary">
         Nous soutenir
       </div>
       <div class="app__section5__cards mt-3">
@@ -229,7 +229,7 @@
         </b-card-group>
       </div>
     </section>
-    <section class="app__section app__section6 background-green">
+    <section class="app__section app__section6 bg-success">
       <div class="bg-white font-weight-bold px-3 py-5">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
@@ -252,12 +252,7 @@ export default {
 
 <style lang="scss" scoped>
 .app {
-  .background-green {
-    background-color: #008D67;
-  }
-
   .title {
-    color: #00759b;
     font-size: 5rem;
   }
 
