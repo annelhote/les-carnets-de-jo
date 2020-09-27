@@ -48,7 +48,7 @@
         </div>
       </div>
       <div>
-        <img src="./assets/pencil_case.jpg" title="Trousses et feutres" width="843">
+        <img src="./assets/pencil_case.png" title="Trousses et feutres" width="843">
       </div>
     </section>
     <section class="app__section app__section2 bg-warning">
@@ -100,63 +100,49 @@
               img-src="./assets/school.png"
               img-alt="Ecole"
               img-top
-              bg-variant="dark"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-dark text-white"
           ></b-card>
           <b-card
               title="Je suis une collectivité locale"
               img-src="./assets/city.png"
               img-alt="City"
               img-top
-              bg-variant="primary"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-primary text-white"
           ></b-card>
           <b-card
               title="Je suis un club sportif"
               img-src="./assets/sport.png"
               img-alt="Sport"
               img-top
-              bg-variant="danger"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-danger text-white"
           ></b-card>
           <b-card
               title="Je suis une association"
               img-src="./assets/association.png"
               img-alt="Ecole"
               img-top
-              bg-variant="dark"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-dark text-white"
           ></b-card>
           <b-card
               title="Je suis une bibliothèque"
               img-src="./assets/library.png"
               img-alt="Ecole"
               img-top
-              bg-variant="primary"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-primary text-white"
           ></b-card>
           <b-card
               title="Je suis un centre de loisir"
               img-src="./assets/entertainment.png"
               img-alt="Ecole"
               img-top
-              bg-variant="danger"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-danger text-white"
           ></b-card>
           <b-card
               title="Je suis ce que je suis"
               img-src="./assets/me.png"
               img-alt="Ecole"
               img-top
-              bg-variant="dark"
-              text-variant="white"
-              body-class="py-5 d-flex"
+              body-class="py-5 d-flex bg-dark text-white"
           ></b-card>
         </b-card-group>
       </div>
@@ -166,7 +152,7 @@
         </b-button>
       </div>
     </section>
-    <section class="app__section app__section4 bg-warning">
+    <section class="app__section app__section4 bg-warning text-center">
       <div class="app__section4__image">
         QUOTE
       </div>
@@ -177,7 +163,7 @@
         Ces deux éléments participent à créer
         une société plus juste et fraternelle.»
       </div>
-      <div class="app__section4__author font-weight-bold font-italic mt-3">
+      <div class="app__section4__author font-italic mt-3 font-weight-lighter">
         Nelson Mandela
       </div>
     </section>
@@ -192,7 +178,7 @@
               img-src="./assets/hand.png"
               img-alt="Parrainage"
               img-top
-              body-class="py-5 bg-dark text-light">
+              body-class="py-5 bg-dark text-light text-center">
             <b-card-text>
               Et j'agis positivement sur la vie locale!
             </b-card-text>
@@ -205,7 +191,7 @@
               img-src="./assets/five.png"
               img-alt="Adhésion"
               img-top
-              body-class="py-5 bg-primary text-light">
+              body-class="py-5 bg-primary text-light text-center">
             <b-card-text>
               Et je participe à la vie de l'association!
             </b-card-text>
@@ -218,7 +204,7 @@
               img-src="./assets/family.png"
               img-alt="Temps"
               img-top
-              body-class="py-5 bg-danger text-light">
+              body-class="py-5 bg-danger text-light text-center">
             <b-card-text>
               Et j'anime ou j'interviens dans des ateliers!
             </b-card-text>
@@ -230,7 +216,7 @@
       </div>
     </section>
     <section class="app__section app__section6 bg-success">
-      <div class="bg-white font-weight-bold px-3 py-5">
+      <div class="app__section6__address bg-white font-weight-bold py-5">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
         75020 PARIS<br>
@@ -278,8 +264,10 @@ export default {
       &__cards .card-deck .card {
         border: none;
         border-radius: unset;
-        margin-bottom: 12px;
-        min-width: 20%;
+        margin: 0;
+        max-width: 25%;
+        min-width: 25%;
+        padding: 15px;
 
         img {
           border-radius: unset;
@@ -308,6 +296,12 @@ export default {
         .card-title {
           margin: auto;
         }
+      }
+    }
+
+    &6 {
+      &__address {
+        padding-left: 150px;
       }
     }
   }
