@@ -9,3 +9,11 @@ $theme-colors: (
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/bootstrap-vue/src/index';
+
+@import url('https://fonts.googleapis.com/css2?family=Mali');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Source+Sans+Pro');
+
+#app {
+  font-family: 'Mali', cursive;
+}

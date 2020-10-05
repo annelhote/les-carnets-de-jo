@@ -105,7 +105,7 @@
       ...
     </section>
     <section class="app__section app__section__odd row text-center" ref="section3">
-      <div class="app__section__title title text-uppercase text-primary">
+      <div class="app__section__title text-uppercase text-primary">
         Demander une intervention
       </div>
       <div class="app__section__subtitle font-weight-bold">
@@ -182,7 +182,7 @@
       </div>
     </section>
     <section class="app__section app__section__odd row" ref="section5">
-      <div class="app__section__title title text-uppercase text-center text-primary">
+      <div class="app__section__title text-uppercase text-center text-primary">
         Nous soutenir
       </div>
       <div class="app__section__cards__support mt-3">
@@ -236,10 +236,12 @@
     </section>
     <section class="app__section app__section__even row">
       <div class="col-6">
-        <img src="./assets/basket.png" title="Baskets" width="843">
+        <img src="./assets/basket.png" title="Baskets" class="w-100">
       </div>
       <div class="col-6">
-        NOUS contacter
+        <div class="app__section__title text-uppercase text-primary">
+          Nous contacter
+        </div>
         <b-form>
           <b-form-group id="input-group-2" label-for="input-2">
             <b-form-input
@@ -340,9 +342,6 @@ export default {
 
 <style lang="scss" scoped>
 .app {
-  .title {
-    font-size: 5rem;
-  }
 
   &__nav {
     height: 150px;
@@ -364,7 +363,8 @@ export default {
     padding: 6rem;
 
     &__title {
-      font-size: 40px;
+      font-family: 'Mouse Memoirs', sans-serif;
+      font-size: 5rem;
     }
 
     &__cards__contribution .card-deck .card {
