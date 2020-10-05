@@ -1,10 +1,10 @@
 <template>
-  <div id="app" class="app">
-    <div class="app__nav row">
-      <div class="col-4">
-        <img src="./assets/logo.jpg" title="Les carnets de Jo" width="500" class="pl-5">
+  <div id="app" class="app container-fluid">
+    <div class="app__nav row sticky-top bg-primary" :class="{ 'shrinked': isShrinked }">
+      <div class="col-4 h-100">
+        <img src="./assets/logo.jpg" title="Les carnets de Jo" class="pl-5 h-100">
       </div>
-      <b-nav align="center" class="text-center text-uppercase col-8 bg-primary text-white m-auto">
+      <b-nav align="center" class="col-8 text-center text-uppercase text-white m-auto">
         <b-nav-item>
           <a @click="goTo('section1')">
             Accueil
@@ -66,7 +66,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="col-6">
         <img src="./assets/pencil_case.png" title="Trousses et feutres" width="843">
       </div>
     </section>
@@ -269,7 +269,7 @@
           <b-form-group>
             <b-form-textarea
                 id="textarea"
-                v-model="text"
+                v-model="form.text"
                 placeholder="Message"
                 rows="3"
                 max-rows="6"
@@ -309,20 +309,31 @@ export default {
   name: 'app',
   data () {
     return {
+      isShrinked: false,
       form: {
         email: '',
         name: '',
         object: '',
+        text: '',
         food: null,
         checked: []
       }
     }
   },
   methods: {
+    handleScroll () {
+      this.$set(this, 'isShrinked', window.scrollY > 40)
+    },
     goTo(refName) {
       const element = this.$refs[refName]
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -334,8 +345,18 @@ export default {
   }
 
   &__nav {
+    height: 150px;
+
     .nav-link {
       color: white;
+    }
+
+    &.shrinked {
+      height: 75px;
+
+      .nav-link {
+        font-size: smaller;
+      }
     }
   }
 
@@ -356,8 +377,6 @@ export default {
         border: none;
         border-radius: unset;
         margin: 0;
-        // max-width: 25%;
-        // min-width: 25%;
         padding: 15px;
 
         img {
