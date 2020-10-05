@@ -47,7 +47,7 @@
         </b-nav-item>
       </b-nav>
     </div>
-    <section class="app__section app__section1 row no-gutters" ref="section1">
+    <section class="app__section app__section1 row" ref="section1">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
           <div class="font-weight-bold">
@@ -70,9 +70,9 @@
         <img src="./assets/pencil_case.png" title="Trousses et feutres" width="843">
       </div>
     </section>
-    <section class="app__section app__section2 bg-warning" ref="section2">
+    <section class="app__section app__section2 row bg-warning" ref="section2">
       <div>
-        <div class="app__section2__title font-weight-bold">
+        <div class="app__section2__title font-weight-bold mb-5">
           Qui sommes-nous ?
         </div>
         <div class="app__section2__content mt-3">
@@ -167,8 +167,8 @@
       </div>
     </section>
     <section class="app__section app__section4 bg-warning text-center" ref="section4">
-      <div class="app__section4__image">
-        QUOTE
+      <div class="app__section4__image mb-5">
+        <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
       </div>
       <div class="app__section4__content font-weight-bold mt-3">
         « L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
@@ -361,7 +361,7 @@ export default {
   }
 
   &__section {
-    padding: 5rem;
+    padding: 6rem;
 
     &2 {
       padding-left: 30rem;
