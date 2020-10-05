@@ -2,7 +2,7 @@
   <div id="app" class="app container-fluid">
     <div class="app__nav row sticky-top bg-primary" :class="{ 'shrinked': isShrinked }">
       <div class="col-4 h-100">
-        <img src="./assets/logo.jpg" title="Les carnets de Jo" class="pl-5 h-100">
+        <img src="./assets/logo.png" alt="Les Carnets de Jo" class="pl-5 h-100">
       </div>
       <b-nav align="center" class="col-8 text-center text-uppercase text-white m-auto">
         <b-nav-item>
@@ -67,12 +67,12 @@
         </div>
       </div>
       <div class="col-6">
-        <img src="./assets/pencil_case.png" title="Trousses et feutres" width="843">
+        <img src="./assets/pencil_case.png" alt="Trousses et feutres" width="843">
       </div>
     </section>
-    <section class="app__section app__section__even row bg-warning" ref="section2">
-      <div>
-        <div class="app__section__title font-weight-bold mb-5">
+    <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section2">
+      <div class="col-6">
+        <div class="app__section__title font-weight-bold mb-5 text-center">
           Qui sommes-nous ?
         </div>
         <div class="app__section__content mt-3">
@@ -96,147 +96,151 @@
       <div>
         L'histoire
       </div>
-      ...
     </section>
     <section class="app__section app__section__even row">
       <div>
         L'équipe
       </div>
-      ...
     </section>
     <section class="app__section app__section__odd row text-center" ref="section3">
-      <div class="app__section__title text-uppercase text-primary">
-        Demander une intervention
-      </div>
-      <div class="app__section__subtitle font-weight-bold">
-        <div>
-          Une idée vous trotte dans la tête...
+      <div class="col-12">
+        <div class="app__section__title text-uppercase text-primary">
+          Demander une intervention
         </div>
-        <div>
-          L'envie de vous lancer dans un projet d'éducation par le sport,
+        <div class="app__section__subtitle font-weight-bold">
+          <div>
+            Une idée vous trotte dans la tête...
+          </div>
+          <div>
+            L'envie de vous lancer dans un projet d'éducation par le sport,
+          </div>
+          <div>
+            mais vous ne savez pas par où commencer ?
+          </div>
         </div>
-        <div>
-          mais vous ne savez pas par où commencer ?
+        <div class="app__section__cards__contribution mt-3">
+          <b-card-group deck>
+            <b-card
+                title="Je suis une école"
+                img-src="./assets/school.png"
+                img-alt="Ecole"
+                img-top
+                body-class="py-5 d-flex bg-dark text-white"
+            ></b-card>
+            <b-card
+                title="Je suis une collectivité locale"
+                img-src="./assets/city.png"
+                img-alt="City"
+                img-top
+                body-class="py-5 d-flex bg-primary text-white"
+            ></b-card>
+            <b-card
+                title="Je suis un club sportif"
+                img-src="./assets/sport.png"
+                img-alt="Sport"
+                img-top
+                body-class="py-5 d-flex bg-danger text-white"
+            ></b-card>
+            <b-card
+                title="Je suis une association"
+                img-src="./assets/association.png"
+                img-alt="Ecole"
+                img-top
+                body-class="py-5 d-flex bg-dark text-white"
+            ></b-card>
+            <b-card
+                title="Je suis une bibliothèque"
+                img-src="./assets/library.png"
+                img-alt="Ecole"
+                img-top
+                body-class="py-5 d-flex bg-primary text-white"
+            ></b-card>
+            <b-card
+                title="Je suis un centre de loisir"
+                img-src="./assets/entertainment.png"
+                img-alt="Ecole"
+                img-top
+                body-class="py-5 d-flex bg-danger text-white"
+            ></b-card>
+          </b-card-group>
         </div>
-      </div>
-      <div class="app__section__cards__contribution mt-3">
-        <b-card-group deck>
-          <b-card
-              title="Je suis une école"
-              img-src="./assets/school.png"
-              img-alt="Ecole"
-              img-top
-              body-class="py-5 d-flex bg-dark text-white"
-          ></b-card>
-          <b-card
-              title="Je suis une collectivité locale"
-              img-src="./assets/city.png"
-              img-alt="City"
-              img-top
-              body-class="py-5 d-flex bg-primary text-white"
-          ></b-card>
-          <b-card
-              title="Je suis un club sportif"
-              img-src="./assets/sport.png"
-              img-alt="Sport"
-              img-top
-              body-class="py-5 d-flex bg-danger text-white"
-          ></b-card>
-          <b-card
-              title="Je suis une association"
-              img-src="./assets/association.png"
-              img-alt="Ecole"
-              img-top
-              body-class="py-5 d-flex bg-dark text-white"
-          ></b-card>
-          <b-card
-              title="Je suis une bibliothèque"
-              img-src="./assets/library.png"
-              img-alt="Ecole"
-              img-top
-              body-class="py-5 d-flex bg-primary text-white"
-          ></b-card>
-          <b-card
-              title="Je suis un centre de loisir"
-              img-src="./assets/entertainment.png"
-              img-alt="Ecole"
-              img-top
-              body-class="py-5 d-flex bg-danger text-white"
-          ></b-card>
-        </b-card-group>
       </div>
     </section>
-    <section class="app__section app__section__even row bg-warning text-center" ref="section4">
-      <div class="app__section__image mb-5 text-center w-100">
-        <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
-      </div>
-      <div class="app__section__content font-weight-bold mt-3">
-        « L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
-        et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
-        du respect de la jeunesse.<br><br>
-        Ces deux éléments participent à créer
-        une société plus juste et fraternelle.»
-      </div>
-      <div class="app__section__author font-italic mt-3 font-weight-lighter w-100">
-        Nelson Mandela
+    <section class="app__section app__section__even row justify-content-md-center bg-warning" ref="section4">
+      <div class="col-6 text-center">
+        <div class="app__section__image mb-5">
+          <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
+        </div>
+        <div class="app__section__content font-weight-bold mt-3">
+          « L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
+          et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
+          du respect de la jeunesse.<br><br>
+          Ces deux éléments participent à créer
+          une société plus juste et fraternelle.»
+        </div>
+        <div class="app__section__author font-italic mt-3 font-weight-lighter">
+          Nelson Mandela
+        </div>
       </div>
     </section>
     <section class="app__section app__section__odd row" ref="section5">
-      <div class="app__section__title text-uppercase text-center text-primary">
-        Nous soutenir
-      </div>
-      <div class="app__section__cards__support mt-3">
-        <b-card-group deck>
-          <b-card
-              title="Je parraine des ateliers"
-              img-src="./assets/hand.png"
-              img-alt="Parrainage"
-              img-top
-              body-class="py-5 bg-dark text-light text-center">
-            <b-card-text>
-              Et j'agis positivement sur la vie locale!
-              <a href="" class="stretched-link"></a>
-            </b-card-text>
-          </b-card>
-          <b-card
-              title="J'adhère"
-              img-src="./assets/five.png"
-              img-alt="Adhésion"
-              img-top
-              body-class="py-5 bg-primary text-light text-center">
-            <b-card-text>
-              Et je participe à la vie de l'association!
-              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
-            </b-card-text>
-          </b-card>
-          <b-card
-              title="Je contribue"
-              img-src="./assets/family.png"
-              img-alt="Temps"
-              img-top
-              body-class="py-5 bg-danger text-light text-center">
-            <b-card-text>
-              Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
-              <a href="" class="stretched-link"></a>
-            </b-card-text>
-          </b-card>
-          <b-card
-              title="Je fais un don"
-              img-src="./assets/family.png"
-              img-alt="Don"
-              img-top
-              body-class="py-5 bg-dark text-light text-center">
-            <b-card-text>
-              Et je permets le développement de l'association
-              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
-            </b-card-text>
-          </b-card>
-        </b-card-group>
+      <div class="col-12">
+        <div class="app__section__title text-uppercase text-center text-primary">
+          Nous soutenir
+        </div>
+        <div class="app__section__cards__support mt-3">
+          <b-card-group deck>
+            <b-card
+                title="Je parraine des ateliers"
+                img-src="./assets/hand.png"
+                img-alt="Parrainage"
+                img-top
+                body-class="py-5 bg-dark text-light text-center">
+              <b-card-text>
+                Et j'agis positivement sur la vie locale!
+                <a href="" class="stretched-link"></a>
+              </b-card-text>
+            </b-card>
+            <b-card
+                title="J'adhère"
+                img-src="./assets/five.png"
+                img-alt="Adhésion"
+                img-top
+                body-class="py-5 bg-primary text-light text-center">
+              <b-card-text>
+                Et je participe à la vie de l'association!
+                <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
+              </b-card-text>
+            </b-card>
+            <b-card
+                title="Je contribue"
+                img-src="./assets/family.png"
+                img-alt="Temps"
+                img-top
+                body-class="py-5 bg-danger text-light text-center">
+              <b-card-text>
+                Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
+                <a href="" class="stretched-link"></a>
+              </b-card-text>
+            </b-card>
+            <b-card
+                title="Je fais un don"
+                img-src="./assets/family.png"
+                img-alt="Don"
+                img-top
+                body-class="py-5 bg-dark text-light text-center">
+              <b-card-text>
+                Et je permets le développement de l'association
+                <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
+              </b-card-text>
+            </b-card>
+          </b-card-group>
+        </div>
       </div>
     </section>
     <section class="app__section app__section__even row">
       <div class="col-6">
-        <img src="./assets/basket.png" title="Baskets" class="w-100">
+        <img src="./assets/basket.png" alt="Baskets" class="w-100">
       </div>
       <div class="col-6">
         <div class="app__section__title text-uppercase text-primary">
@@ -285,6 +289,7 @@
     </section>
     <footer class="app__footer row bg-warning text-center mt-5 p-3">
       <div class="col-4">
+        <img src="./assets/logo-footer.png" alt="Jo" width="50" class="app__footer__logo">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
         75020 PARIS<br>
@@ -397,6 +402,12 @@ export default {
   }
 
   &__footer {
+    &__logo {
+      left: 30px;
+      position: absolute;
+      top: 59px
+    }
+
     a {
       color: #212529;
     }
