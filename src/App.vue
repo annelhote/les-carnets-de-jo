@@ -118,51 +118,43 @@
             mais vous ne savez pas par où commencer ?
           </div>
         </div>
-        <div class="app__section__cards__contribution mt-3">
-          <b-card-group deck>
-            <b-card
-                title="Je suis une école"
-                img-src="./assets/school.png"
-                img-alt="Ecole"
-                img-top
-                body-class="py-5 d-flex bg-dark text-white"
-            ></b-card>
-            <b-card
-                title="Je suis une collectivité locale"
-                img-src="./assets/city.png"
-                img-alt="City"
-                img-top
-                body-class="py-5 d-flex bg-primary text-white"
-            ></b-card>
-            <b-card
-                title="Je suis un club sportif"
-                img-src="./assets/sport.png"
-                img-alt="Sport"
-                img-top
-                body-class="py-5 d-flex bg-danger text-white"
-            ></b-card>
-            <b-card
-                title="Je suis une association"
-                img-src="./assets/association.png"
-                img-alt="Ecole"
-                img-top
-                body-class="py-5 d-flex bg-dark text-white"
-            ></b-card>
-            <b-card
-                title="Je suis une bibliothèque"
-                img-src="./assets/library.png"
-                img-alt="Ecole"
-                img-top
-                body-class="py-5 d-flex bg-primary text-white"
-            ></b-card>
-            <b-card
-                title="Je suis un centre de loisir"
-                img-src="./assets/entertainment.png"
-                img-alt="Ecole"
-                img-top
-                body-class="py-5 d-flex bg-danger text-white"
-            ></b-card>
-          </b-card-group>
+        <div class="app__section__cards__contribution row mt-3">
+          <div class="col-2">
+            <img src="./assets/school.png" alt="Ecole" class="rounded-circle" width="250">
+            <div class="app__section__macaron">
+              Je suis une école
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./assets/city.png" alt="Collectivité" class="rounded-circle" width="250">
+            <div class="app__section__macaron">
+              Je suis une collectivité locale
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./assets/sport.png" alt="Club sportif" class="rounded-circle" width="250">
+            <div class="app__section__macaron">
+              Je suis un club sportif
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./assets/association.png" alt="Association" class="rounded-circle" width="250">
+            <div class="app__section__macaron">
+              Je suis une association
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./assets/library.png" alt="Bibliothèque" class="rounded-circle" width="250">
+            <div class="app__section__macaron">
+              Je suis une bibliothèque
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./assets/entertainment.png" alt="Centre de loisir" class="rounded-circle" width="250">
+            <div class="app__section__macaron">
+              Je suis un centre de loisir
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -249,36 +241,36 @@
         <b-form>
           <b-form-group id="input-group-2" label-for="input-2">
             <b-form-input
-                id="input-2"
-                v-model="form.name"
-                required
-                placeholder="Nom *"
+              id="input-2"
+              v-model="form.name"
+              required
+              placeholder="Nom *"
             ></b-form-input>
           </b-form-group>
           <b-form-group id="input-group-1" label-for="input-1">
             <b-form-input
-                id="input-1"
-                v-model="form.email"
-                type="email"
-                required
-                placeholder="Adresse email *"
+              id="input-1"
+              v-model="form.email"
+              type="email"
+              required
+              placeholder="Adresse email *"
             ></b-form-input>
           </b-form-group>
           <b-form-group id="input-group-3" label-for="input-3">
             <b-form-input
-                id="input-3"
-                v-model="form.object"
-                required
-                placeholder="Objet *"
+              id="input-3"
+              v-model="form.object"
+              required
+              placeholder="Objet *"
             ></b-form-input>
           </b-form-group>
           <b-form-group>
             <b-form-textarea
-                id="textarea"
-                v-model="form.text"
-                placeholder="Message"
-                rows="3"
-                max-rows="6"
+              id="textarea"
+              v-model="form.text"
+              placeholder="Message"
+              rows="3"
+              max-rows="6"
             ></b-form-textarea>
           </b-form-group>
           <b-button type="submit" variant="primary">
@@ -372,18 +364,19 @@ export default {
       font-size: 5rem;
     }
 
-    &__cards__contribution .card-deck .card {
-      border: none;
-      border-radius: unset;
-      margin: 0;
-      padding: 15px;
+    &__macaron {
+      background-color: transparent;
+      border-radius: 50%;
+      color: transparent;
+      height: 250px;
+      line-height: 250px;
+      position: absolute;
+      top: 0;
+      width: 250px;
 
-      img {
-        border-radius: unset;
-      }
-
-      .card-title {
-        margin: auto;
+      &:hover {
+        background-color: black;
+        color: white;
       }
     }
 
