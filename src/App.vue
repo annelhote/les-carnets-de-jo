@@ -47,7 +47,7 @@
         </b-nav-item>
       </b-nav>
     </div>
-    <section class="app__section app__section1 row" ref="section1">
+    <section class="app__section app__section__odd row" ref="section1">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
           <div class="font-weight-bold">
@@ -70,12 +70,12 @@
         <img src="./assets/pencil_case.png" title="Trousses et feutres" width="843">
       </div>
     </section>
-    <section class="app__section app__section2 row bg-warning" ref="section2">
+    <section class="app__section app__section__even row bg-warning" ref="section2">
       <div>
-        <div class="app__section2__title font-weight-bold mb-5">
+        <div class="app__section__title font-weight-bold mb-5">
           Qui sommes-nous ?
         </div>
-        <div class="app__section2__content mt-3">
+        <div class="app__section__content mt-3">
           Convaincus que le sport est source d'inspiration et d’épanouissement de la jeunesse,
           Les Carnets de Jo est une association qui met en place des actions et développe des outils pédagogiques
           et ludiques autour du sport pour favoriser la réussite éducative et l’insertion sociale des jeunes,
@@ -92,23 +92,23 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="app__section app__section__odd row">
       <div>
         L'histoire
       </div>
       ...
     </section>
-    <section>
+    <section class="app__section app__section__even row">
       <div>
         L'équipe
       </div>
       ...
     </section>
-    <section class="app__section app__section3 text-center" ref="section3">
-      <div class="app__section3__title title text-uppercase text-primary">
+    <section class="app__section app__section__odd row text-center" ref="section3">
+      <div class="app__section__title title text-uppercase text-primary">
         Demander une intervention
       </div>
-      <div class="app__section3__subtitle font-weight-bold">
+      <div class="app__section__subtitle font-weight-bold">
         <div>
           Une idée vous trotte dans la tête...
         </div>
@@ -119,7 +119,7 @@
           mais vous ne savez pas par où commencer ?
         </div>
       </div>
-      <div class="app__section3__cards mt-3">
+      <div class="app__section__cards__contribution mt-3">
         <b-card-group deck>
           <b-card
               title="Je suis une école"
@@ -166,26 +166,26 @@
         </b-card-group>
       </div>
     </section>
-    <section class="app__section app__section4 bg-warning text-center" ref="section4">
-      <div class="app__section4__image mb-5">
+    <section class="app__section app__section__even row bg-warning text-center" ref="section4">
+      <div class="app__section__image mb-5 text-center w-100">
         <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
       </div>
-      <div class="app__section4__content font-weight-bold mt-3">
+      <div class="app__section__content font-weight-bold mt-3">
         « L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
         et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
         du respect de la jeunesse.<br><br>
         Ces deux éléments participent à créer
         une société plus juste et fraternelle.»
       </div>
-      <div class="app__section4__author font-italic mt-3 font-weight-lighter">
+      <div class="app__section__author font-italic mt-3 font-weight-lighter w-100">
         Nelson Mandela
       </div>
     </section>
-    <section class="app__section app__section5" ref="section5">
-      <div class="app__section5__title title text-uppercase text-center text-primary">
+    <section class="app__section app__section__odd row" ref="section5">
+      <div class="app__section__title title text-uppercase text-center text-primary">
         Nous soutenir
       </div>
-      <div class="app__section5__cards mt-3">
+      <div class="app__section__cards__support mt-3">
         <b-card-group deck>
           <b-card
               title="Je parraine des ateliers"
@@ -234,12 +234,12 @@
         </b-card-group>
       </div>
     </section>
-    <section class="row">
-      NOUS contacter
+    <section class="app__section app__section__even row">
       <div class="col-6">
         <img src="./assets/basket.png" title="Baskets" width="843">
       </div>
       <div class="col-6">
+        NOUS contacter
         <b-form>
           <b-form-group id="input-group-2" label-for="input-2">
             <b-form-input
@@ -281,7 +281,7 @@
         </b-form>
       </div>
     </section>
-    <footer class="bg-warning text-center mt-5 p-3 row">
+    <footer class="row bg-warning text-center mt-5 p-3">
       <div class="col-4">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
@@ -294,10 +294,10 @@
       </div>
       <div class="col-4">
         <a href="https://www.facebook.com/CollectionJo/" target="_blank">
-          Facebook
+          <font-awesome-icon :icon="['fab', 'facebook']" size="2x"></font-awesome-icon>
         </a>
-        <a href="https://www.instagram.com/les_rencontres_de_jo/" target="_blank">
-          Instagram
+        <a href="https://www.instagram.com/les_rencontres_de_jo/" target="_blank" class="ml-2">
+          <font-awesome-icon :icon="['fab', 'twitter']" size="2x"></font-awesome-icon>
         </a>
       </div>
     </footer>
@@ -363,55 +363,35 @@ export default {
   &__section {
     padding: 6rem;
 
-    &2 {
-      padding-left: 30rem;
-      padding-right: 30rem;
-
-      &__title {
-        font-size: 40px;
-      }
+    &__title {
+      font-size: 40px;
     }
 
-    &3 {
-      &__cards .card-deck .card {
-        border: none;
+    &__cards__contribution .card-deck .card {
+      border: none;
+      border-radius: unset;
+      margin: 0;
+      padding: 15px;
+
+      img {
         border-radius: unset;
-        margin: 0;
-        padding: 15px;
+      }
 
-        img {
-          border-radius: unset;
-        }
-
-        .card-title {
-          margin: auto;
-        }
+      .card-title {
+        margin: auto;
       }
     }
 
-    &4 {
-      padding-left: 40rem;
-      padding-right: 40rem;
-    }
+    &__cards__support .card-deck .card {
+      border: none;
+      border-radius: unset;
 
-    &5 {
-      &__cards .card-deck .card {
-        border: none;
+      img {
         border-radius: unset;
-
-        img {
-          border-radius: unset;
-        }
-
-        .card-title {
-          margin: auto;
-        }
       }
-    }
 
-    &6 {
-      &__address {
-        padding-left: 150px;
+      .card-title {
+        margin: auto;
       }
     }
   }
