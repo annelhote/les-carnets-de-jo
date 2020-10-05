@@ -195,10 +195,8 @@
               body-class="py-5 bg-dark text-light text-center">
             <b-card-text>
               Et j'agis positivement sur la vie locale!
+              <a href="" class="stretched-link"></a>
             </b-card-text>
-            <b-button href="#" variant="light" pill>
-              Nous contacter
-            </b-button>
           </b-card>
           <b-card
               title="J'adhère"
@@ -208,10 +206,8 @@
               body-class="py-5 bg-primary text-light text-center">
             <b-card-text>
               Et je participe à la vie de l'association!
+              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
             </b-card-text>
-            <b-button href="https://www.helloasso.com/associations/les-carnets-de-jo" variant="light" pill target="_blank">
-              Adhérer
-            </b-button>
           </b-card>
           <b-card
               title="Je contribue"
@@ -221,10 +217,8 @@
               body-class="py-5 bg-danger text-light text-center">
             <b-card-text>
               Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
+              <a href="" class="stretched-link"></a>
             </b-card-text>
-            <b-button href="#" variant="light" pill>
-              Nous contacter
-            </b-button>
           </b-card>
           <b-card
               title="Je fais un don"
@@ -234,10 +228,8 @@
               body-class="py-5 bg-dark text-light text-center">
             <b-card-text>
               Et je permets le développement de l'association
+              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
             </b-card-text>
-            <b-button href="https://www.helloasso.com/associations/les-carnets-de-jo" variant="light" pill target="_blank">
-              Donner
-            </b-button>
           </b-card>
         </b-card-group>
       </div>
