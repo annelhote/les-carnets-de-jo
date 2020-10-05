@@ -281,7 +281,7 @@
         </b-form>
       </div>
     </section>
-    <footer class="row bg-warning text-center mt-5 p-3">
+    <footer class="app__footer row bg-warning text-center mt-5 p-3">
       <div class="col-4">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
@@ -294,10 +294,10 @@
       </div>
       <div class="col-4">
         <a href="https://www.facebook.com/CollectionJo/" target="_blank">
-          <font-awesome-icon :icon="['fab', 'facebook']" size="2x"></font-awesome-icon>
+          <font-awesome-icon :icon="['fab', 'facebook-square']" size="2x"></font-awesome-icon>
         </a>
-        <a href="https://www.instagram.com/les_rencontres_de_jo/" target="_blank" class="ml-2">
-          <font-awesome-icon :icon="['fab', 'twitter']" size="2x"></font-awesome-icon>
+        <a href="https://www.instagram.com/lesincroyablesrencontresdejo/" target="_blank" class="ml-2">
+          <font-awesome-icon :icon="['fab', 'instagram-square']" size="2x"></font-awesome-icon>
         </a>
       </div>
     </footer>
@@ -393,6 +393,12 @@ export default {
       .card-title {
         margin: auto;
       }
+    }
+  }
+
+  &__footer {
+    a {
+      color: #212529;
     }
   }
 }
