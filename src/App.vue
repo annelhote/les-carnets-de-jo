@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="app">
-    <div class="m-3 text-center">
-      <img src="./assets/logo.png" title="Les carnets de Jo" width="192">
-    </div>
-    <div class="app__nav text-center bg-warning">
-      <b-nav align="center text-uppercase">
+    <div class="app__nav row">
+      <div class="col-4">
+        <img src="./assets/logo.jpg" title="Les carnets de Jo" width="500" class="pl-5">
+      </div>
+      <b-nav align="center" class="text-center text-uppercase col-8 bg-primary text-white m-auto">
         <b-nav-item>
           <a @click="goTo('section1')">
             Accueil
@@ -12,7 +12,17 @@
         </b-nav-item>
         <b-nav-item>
           <a @click="goTo('section2')">
-            Qui sommes nous ?
+            Qui sommes-nous ?
+          </a>
+        </b-nav-item>
+        <b-nav-item>
+          <a @click="goTo('section2')">
+            L'histoire
+          </a>
+        </b-nav-item>
+        <b-nav-item>
+          <a @click="goTo('section2')">
+            L'équipe
           </a>
         </b-nav-item>
         <b-nav-item>
@@ -40,9 +50,6 @@
     <section class="app__section app__section1 row no-gutters" ref="section1">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
-          <div class="app__section1__title title text-uppercase text-primary">
-            Les carnets de Jo
-          </div>
           <div class="font-weight-bold">
             Association d'intérêt général dédiée à l'éducation par le sport !
           </div>
@@ -83,12 +90,19 @@
           et d'experts, des outils innovants et des expérimentations sur le terrain, nous participerons à révéler
           son potentiel éducatif comme moyen au service de l'éducation de demain.
         </div>
-        <div class="app__section2__button mt-3">
-          <b-button variant="dark" pill>
-            En savoir plus
-          </b-button>
-        </div>
       </div>
+    </section>
+    <section>
+      <div>
+        L'histoire
+      </div>
+      ...
+    </section>
+    <section>
+      <div>
+        L'équipe
+      </div>
+      ...
     </section>
     <section class="app__section app__section3 text-center" ref="section3">
       <div class="app__section3__title title text-uppercase text-primary">
@@ -149,19 +163,7 @@
               img-top
               body-class="py-5 d-flex bg-danger text-white"
           ></b-card>
-          <b-card
-              title="Je suis ce que je suis"
-              img-src="./assets/me.png"
-              img-alt="Ecole"
-              img-top
-              body-class="py-5 d-flex bg-dark text-white"
-          ></b-card>
         </b-card-group>
-      </div>
-      <div class="app__section3__button mt-3">
-        <b-button variant="primary" pill>
-          Nous contacter
-        </b-button>
       </div>
     </section>
     <section class="app__section app__section4 bg-warning text-center" ref="section4">
@@ -207,37 +209,105 @@
             <b-card-text>
               Et je participe à la vie de l'association!
             </b-card-text>
-            <b-button href="#" variant="light" pill>
+            <b-button href="https://www.helloasso.com/associations/les-carnets-de-jo" variant="light" pill target="_blank">
               Adhérer
             </b-button>
           </b-card>
           <b-card
-              title="Je donne du temps"
+              title="Je contribue"
               img-src="./assets/family.png"
               img-alt="Temps"
               img-top
               body-class="py-5 bg-danger text-light text-center">
             <b-card-text>
-              Et j'anime ou j'interviens dans des ateliers!
+              Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
             </b-card-text>
             <b-button href="#" variant="light" pill>
               Nous contacter
             </b-button>
           </b-card>
+          <b-card
+              title="Je fais un don"
+              img-src="./assets/family.png"
+              img-alt="Don"
+              img-top
+              body-class="py-5 bg-dark text-light text-center">
+            <b-card-text>
+              Et je permets le développement de l'association
+            </b-card-text>
+            <b-button href="https://www.helloasso.com/associations/les-carnets-de-jo" variant="light" pill target="_blank">
+              Donner
+            </b-button>
+          </b-card>
         </b-card-group>
       </div>
     </section>
-    <section class="app__section app__section6 bg-success" ref="section6">
-      <div class="app__section6__address bg-white font-weight-bold py-5">
+    <section class="row">
+      NOUS contacter
+      <div class="col-6">
+        <img src="./assets/basket.png" title="Baskets" width="843">
+      </div>
+      <div class="col-6">
+        <b-form>
+          <b-form-group id="input-group-2" label-for="input-2">
+            <b-form-input
+                id="input-2"
+                v-model="form.name"
+                required
+                placeholder="Nom *"
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group id="input-group-1" label-for="input-1">
+            <b-form-input
+                id="input-1"
+                v-model="form.email"
+                type="email"
+                required
+                placeholder="Adresse email *"
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group id="input-group-3" label-for="input-3">
+            <b-form-input
+                id="input-3"
+                v-model="form.object"
+                required
+                placeholder="Objet *"
+            ></b-form-input>
+          </b-form-group>
+          <b-form-group>
+            <b-form-textarea
+                id="textarea"
+                v-model="text"
+                placeholder="Message"
+                rows="3"
+                max-rows="6"
+            ></b-form-textarea>
+          </b-form-group>
+          <b-button type="submit" variant="primary">
+            Envoyer
+          </b-button>
+        </b-form>
+      </div>
+    </section>
+    <footer class="bg-warning text-center mt-5 p-3 row">
+      <div class="col-4">
         LES CARNETS DE JO<br><br>
         6 rue Jean-Baptiste Dumay<br>
         75020 PARIS<br>
         FRANCE<br><br>
         lescarnetsdejo@gmail.com
       </div>
-    </section>
-    <footer class="bg-warning text-center mt-5 p-3">
-      ©2020 par Les Carnets de Jo
+      <div class="col-4">
+        ©2020 par <span class="font-italic">Les Carnets de Jo</span>
+      </div>
+      <div class="col-4">
+        <a href="https://www.facebook.com/CollectionJo/" target="_blank">
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/les_rencontres_de_jo/" target="_blank">
+          Instagram
+        </a>
+      </div>
     </footer>
   </div>
 </template>
@@ -245,13 +315,21 @@
 <script>
 export default {
   name: 'app',
+  data () {
+    return {
+      form: {
+        email: '',
+        name: '',
+        object: '',
+        food: null,
+        checked: []
+      }
+    }
+  },
   methods: {
     goTo(refName) {
-      console.log('goto')
-      var element = this.$refs[refName];
-      // var top = element.offsetTop;
-      // window.scrollTo(0, top);
-      element.scrollIntoView();
+      const element = this.$refs[refName]
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 }
@@ -265,7 +343,7 @@ export default {
 
   &__nav {
     .nav-link {
-      color: black;
+      color: white;
     }
   }
 
@@ -286,8 +364,8 @@ export default {
         border: none;
         border-radius: unset;
         margin: 0;
-        max-width: 25%;
-        min-width: 25%;
+        // max-width: 25%;
+        // min-width: 25%;
         padding: 15px;
 
         img {
