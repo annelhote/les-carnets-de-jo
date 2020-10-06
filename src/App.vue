@@ -72,6 +72,7 @@
     </section>
     <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section_who">
       <div class="col-6">
+        <img src="./assets/fencer_girl_in_wheelchair.png" alt="Escrimeuse en fauteuil roulant" class="app__section__wheelchair" width="300">
         <div class="app__section__title font-weight-bold mb-5 text-center">
           Qui sommes-nous ?
         </div>
@@ -93,13 +94,76 @@
       </div>
     </section>
     <section class="app__section app__section__odd row" ref="section_history">
-      <div>
-        L'histoire
+      <div class="col-12">
+        <div class="app__section__title text-uppercase text-primary text-center">
+          L'histoire
+        </div>
+        <div>
+          Astrid GUYART, escrimeuse olympique, vice-championne du monde de fleuret, souhaitait offrir un livre racontant
+          une belle histoire de sport à sa nièce. Ne le trouvant pas en librairie, elle décide de l’écrire elle-même...
+        </div>
+        <div>
+          C’est ainsi que la collection de livres jeunesse « Les incroyables rencontres de Jo » est née. Chaque tome
+          allie le plaisir des premières lectures avec la découverte d’un grand champion français et d’une valeur du
+          sport.
+          <br>
+          L’enthousiasme rencontré auprès des lecteurs et les sollicitations de plusieurs enseignants lui donnent
+          l’envie de mettre plus largement l’univers du sport, de l’olympisme et de ses valeurs au service de
+          l’épanouissement et de la réussite des enfants. Elle fonde « Les Carnets de Jo », association d’intérêt
+          général dédiée à l’éducation par le sport.
+          <br>
+          Si l'objectif initial de la collection "Les Incroyables Rencontres de Jo" était de donner envie aux enfants
+          de s'épanouir et de grandir grâce à la pratique d'une discipline sportive, l'objectif de l'association "Les
+          Carnets de Jo" est de mettre le pouvoir du sport au service de la réussite éducative de la prochaine
+          génération.
+        </div>
+        <div>
+          <img src="./assets/books.png" class="w-100 px-5">
+        </div>
       </div>
     </section>
-    <section class="app__section app__section__even row" ref="section_team">
-      <div>
-        L'équipe
+    <section class="app__section app__section__even bg-warning row" ref="section_team">
+      <div class="col-12">
+        <div class="app__section__title text-uppercase text-primary text-center">
+          L'équipe
+        </div>
+        <div class="row text-center">
+          <div class="col-6">
+            <img src="./assets/astrid_guyart.png" alt="Astrid Guyard" class="rounded-circle" width="250">
+            <div class="mt-3">
+              <div class="font-weight-bold">
+                Astrid GUYART
+              </div>
+              <div class="mt-2 font-weight-bold">
+                Présidente et co-fondatrice de l'association
+              </div>
+              <div class="mt-2">
+                Escrimeuse olympique multi-médaillée en championnats du Monde et championnats d'Europe, Astrid est
+                aussi ingénieure dans l'industrie aérospatiale et auteure de la collection jeunesse "Les Incroyables
+                Rencontres de Jo". Engagée pour la place et les droits des athlètes, elle est membre des commissions
+                des athlètes du Comité National Olympique et Sportif Français (CNOSF), de Paris 2024 et de l’Agence
+                Française de Lutte contre le Dopage (AFLD).
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="./assets/julie_lavet.png" alt="Julie Lavet" class="rounded-circle" width="250">
+            <div class="mt-3">
+              <div class="font-weight-bold">
+                Julie LAVET
+              </div>
+              <div class="mt-2 font-weight-bold">
+                Trésorière et co-fondatrice de l'association
+              </div>
+              <div class="mt-2">
+                Directrice des Relations Institutionnelles du Comité National Olympique et Sportif Français (CNOSF),
+                Julie est engagée pour le place de la jeunesse et l'égalité des chances. Son parcours professionnel
+                en collectivités, à l'Assemblée Nationale et dans les ministères des Sports et de la Ville, lui a
+                apporté une connaissance fine des enjeux et des solutions terrains.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="app__section app__section__odd row text-center" ref="section_actions">
@@ -392,13 +456,19 @@ export default {
         margin: auto;
       }
     }
+
+    &__wheelchair {
+      position: absolute;
+      right: -350px;
+      top: 100px
+    }
   }
 
   &__footer {
     &__logo {
       left: 30px;
       position: absolute;
-      top: 59px
+      top: 59px;
     }
 
     a {
