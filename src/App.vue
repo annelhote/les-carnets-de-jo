@@ -6,48 +6,48 @@
       </div>
       <b-nav align="center" class="col-8 text-center text-uppercase text-white m-auto">
         <b-nav-item>
-          <a @click="goTo('section1')">
+          <a @click="goTo('section_welcome')">
             Accueil
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section2')">
+          <a @click="goTo('section_who')">
             Qui sommes-nous ?
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section2')">
+          <a @click="goTo('section_history')">
             L'histoire
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section2')">
+          <a @click="goTo('section_team')">
             L'équipe
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section3')">
+          <a @click="goTo('section_actions')">
             Nos actions
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section4')">
+          <a @click="goTo('section_tools')">
             Nos outils
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section5')">
+          <a @click="goTo('section_join')">
             Rejoignez-nous
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section6')">
+          <a @click="goTo('section_contact')">
             Contact
           </a>
         </b-nav-item>
       </b-nav>
     </div>
-    <section class="app__section app__section__odd row" ref="section1">
+    <section class="app__section app__section__odd row" ref="section_welcome">
       <div class="col-6 d-flex">
         <div class="w-50 text-center m-auto">
           <div class="font-weight-bold">
@@ -70,7 +70,7 @@
         <img src="./assets/pencil_case.png" alt="Trousses et feutres" width="843">
       </div>
     </section>
-    <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section2">
+    <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section_who">
       <div class="col-6">
         <div class="app__section__title font-weight-bold mb-5 text-center">
           Qui sommes-nous ?
@@ -92,17 +92,17 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__odd row">
+    <section class="app__section app__section__odd row" ref="section_history">
       <div>
         L'histoire
       </div>
     </section>
-    <section class="app__section app__section__even row">
+    <section class="app__section app__section__even row" ref="section_team">
       <div>
         L'équipe
       </div>
     </section>
-    <section class="app__section app__section__odd row text-center" ref="section3">
+    <section class="app__section app__section__odd row text-center" ref="section_actions">
       <div class="col-12">
         <div class="app__section__title text-uppercase text-primary">
           Demander une intervention
@@ -158,7 +158,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row justify-content-md-center bg-warning" ref="section4">
+    <section class="app__section app__section__even row justify-content-md-center bg-warning" ref="section_tools">
       <div class="col-6 text-center">
         <div class="app__section__image mb-5">
           <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
@@ -175,7 +175,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__odd row" ref="section5">
+    <section class="app__section app__section__odd row" ref="section_join">
       <div class="col-12">
         <div class="app__section__title text-uppercase text-center text-primary">
           Nous soutenir
@@ -230,7 +230,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row">
+    <section class="app__section app__section__even row" ref="section_contact">
       <div class="col-6">
         <img src="./assets/basket.png" alt="Baskets" class="w-100">
       </div>
