@@ -11,8 +11,8 @@
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section_who')">
-            Qui sommes-nous ?
+          <a @click="goTo('section_why')">
+            Pourquoi ?
           </a>
         </b-nav-item>
         <b-nav-item>
@@ -31,8 +31,13 @@
           </a>
         </b-nav-item>
         <b-nav-item>
-          <a @click="goTo('section_tools')">
-            Nos outils
+          <a @click="goTo('section_intervention')">
+            Demander une intervention
+          </a>
+        </b-nav-item>
+        <b-nav-item>
+          <a @click="goTo('section_quote')">
+            Citation
           </a>
         </b-nav-item>
         <b-nav-item>
@@ -70,11 +75,11 @@
         <img src="./assets/pencil_case.png" alt="Trousses et feutres" width="843">
       </div>
     </section>
-    <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section_who">
+    <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section_why">
       <div class="col-6">
         <img src="./assets/fencer_girl_in_wheelchair.png" alt="Escrimeuse en fauteuil roulant" class="app__section__wheelchair" width="300">
         <div class="app__section__title font-weight-bold mb-5 text-center">
-          Qui sommes-nous ?
+          Pourquoi ?
         </div>
         <div class="app__section__content mt-3">
           Convaincus que le sport est source d'inspiration et d’épanouissement de la jeunesse,
@@ -169,6 +174,65 @@
     <section class="app__section app__section__odd row text-center" ref="section_actions">
       <div class="col-12">
         <div class="app__section__title text-uppercase text-primary">
+          Nos actions
+        </div>
+        <div class="app__section__subtitle font-weight-bold">
+          Nous intervenons auprès d’élèves de 6 à 11 ans en proposant, en collaboration avec les enseignants, des
+          actions sur-mesure et des supports pédagogiques ludiques d’éducation par le sport.
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div>
+              <img src="./assets/programme_le_masque_et_la_plume.png" alt="Le masque et la plume" width="250" class="rounded-circle">
+              <div>
+                PROGRAMME "LE MASQUE ET LA PLUME"
+              </div>
+              <div>
+                Des ateliers éducatifs et culturels autour d’ouvrages jeunesse sur les thèmes du sport et de ses
+                valeurs, nous proposons des exploitations pédagogiques développées avec les enseignants et des
+                concours d’albums jeunesse par équipes (écriture et illustrations).<br>
+                #APPRENDRE<br>
+                #IMAGINER<br>
+                #CREER
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="./assets/programme_le_corps_et_la_tete.png" alt="Le corps et la tête" width="250" class="rounded-circle">
+              <div>
+                PROGRAMME "LE CORPS ET LA TÊTE"
+              </div>
+              <div>
+                Plusieurs ateliers dynamiques alliant des temps de pratiques d'initiations sportive et des activités
+                éducatives : dictées sportives, mental-run...<br>
+                #BOUGER<br>
+                #S'AMUSER<br>
+                #S'EVEILLER
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="./assets/programme_un_champion_a_l_ecole.png" alt="Un champion à l'école" width="250" class="rounded-circle">
+              <div>
+                PROGRAMME "UN CHAMPION A L'ECOLE"
+              </div>
+              <div>
+                Des athlètes de haut niveau interviennent pour transmettre aux enfants les clés de leur parcours. Ces
+                échanges sont aussi l'occasion d'aborder des sujets de société et de citoyenneté en rapport avec le
+                sport : la santé, l'inclusion, la mixité hommes/femmes, la lutte contre les discriminations...<br>
+                #INSPIRER<br>
+                #TRANSMETTRE
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="app__section app__section__even row text-center" ref="section_intervention">
+      <div class="col-12">
+        <div class="app__section__title text-uppercase text-primary">
           Demander une intervention
         </div>
         <div class="app__section__subtitle font-weight-bold">
@@ -222,7 +286,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row justify-content-md-center bg-warning" ref="section_tools">
+    <section class="app__section app__section__odd row justify-content-md-center bg-warning" ref="section_quote">
       <div class="col-6 text-center">
         <div class="app__section__image mb-5">
           <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
@@ -239,7 +303,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__odd row" ref="section_join">
+    <section class="app__section app__section__even row" ref="section_join">
       <div class="col-12">
         <div class="app__section__title text-uppercase text-center text-primary">
           Nous soutenir
@@ -294,7 +358,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row" ref="section_contact">
+    <section class="app__section app__section__odd row" ref="section_contact">
       <div class="col-6">
         <img src="./assets/basket.png" alt="Baskets" class="w-100">
       </div>
