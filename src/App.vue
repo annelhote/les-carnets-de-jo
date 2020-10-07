@@ -42,12 +42,12 @@
         </b-nav-item>
         <b-nav-item>
           <a @click="goTo('section_join')">
-            Rejoignez-nous
+            Nous soutenir
           </a>
         </b-nav-item>
         <b-nav-item>
           <a @click="goTo('section_contact')">
-            Contact
+            Nous contacter
           </a>
         </b-nav-item>
       </b-nav>
@@ -78,7 +78,7 @@
     <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section_why">
       <div class="col-6">
         <img src="./assets/fencer_girl_in_wheelchair.png" alt="Escrimeuse en fauteuil roulant" class="app__section__wheelchair" width="300">
-        <div class="app__section__title font-weight-bold mb-5 text-center">
+        <div class="app__section__title text-uppercase text-primary text-center">
           Pourquoi ?
         </div>
         <div class="app__section__content mt-3">
