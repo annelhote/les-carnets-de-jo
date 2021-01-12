@@ -417,7 +417,7 @@
         lescarnetsdejo@gmail.com
       </div>
       <div class="col-4">
-        ©2020 par <span class="font-italic">Les Carnets de Jo</span>
+        ©2021 par <span class="font-italic">Les Carnets de Jo</span>
       </div>
       <div class="col-4">
         <a href="https://www.facebook.com/CollectionJo/" target="_blank">
