@@ -90,22 +90,20 @@
           expérimentations sur le terrain, nous participerons à révéler son potentiel éducatif comme moyen au service de
           l'éducation de demain.
         </div>
-      </div>
-    </section>
-    <section class="app__section app__section__odd row justify-content-md-center bg-warning" ref="section_quote">
-      <div class="col-6 text-center">
-        <div class="app__section__image mb-5">
-          <font-awesome-icon icon="quote-right" size="10x"></font-awesome-icon>
-        </div>
-        <div class="app__section__content font-weight-bold mt-3">
-          « L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
-          et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
-          du respect de la jeunesse.<br><br>
-          Ces deux éléments participent à créer
-          une société plus juste et fraternelle.»
-        </div>
-        <div class="app__section__author font-italic mt-3 font-weight-lighter">
-          Nelson Mandela
+        <div class="row justify-content-center">
+          <div class="app__section__content text-center mt-3 col-6">
+            <div class="font-italic">
+              <font-awesome-icon icon="quote-left"></font-awesome-icon>
+              L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
+              et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
+              du respect de la jeunesse.<br>
+              Ces deux éléments participent à créer une société plus juste et fraternelle.
+              <font-awesome-icon icon="quote-right"></font-awesome-icon>
+            </div>
+            <div class="mt-3">
+              Nelson Mandela
+            </div>
+          </div>
         </div>
       </div>
     </section>
