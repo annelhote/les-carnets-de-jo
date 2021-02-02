@@ -457,12 +457,12 @@ export default {
     return {
       isShrinked: false,
       form: {
+        checked: [],
         email: '',
+        food: null,
         name: '',
         object: '',
-        text: '',
-        food: null,
-        checked: []
+        text: ''
       }
     }
   },
