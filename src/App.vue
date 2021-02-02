@@ -440,7 +440,7 @@
         </b-form>
       </div>
     </section>
-    <footer class="app__footer row bg-warning text-center mt-5 p-3">
+    <footer class="app__footer row bg-success text-center mt-5 p-3">
       <div class="col-12">
         <img src="./assets/logo-footer.png" alt="Jo" width="50" class="app__footer__logo">
         LES CARNETS DE JO<br><br>
