@@ -301,40 +301,52 @@
         </div>
         <div class="app__section__cards__contribution app__section__macarons row mt-3">
           <div class="col-2">
-            <img src="./assets/school.png" alt="Ecole" class="rounded-circle" width="250">
-            <div class="app__section__macaron">
-              Je suis une école
-            </div>
+            <a @click="goTo('section_contact')" class="btn">
+              <img src="./assets/school.png" alt="Ecole" class="rounded-circle" width="250">
+              <div class="app__section__macaron">
+                Je suis une école
+              </div>
+            </a>
           </div>
           <div class="col-2">
-            <img src="./assets/city.png" alt="Collectivité" class="rounded-circle" width="250">
-            <div class="app__section__macaron">
-              Je suis une collectivité locale
-            </div>
+            <a @click="goTo('section_contact')" class="btn">
+              <img src="./assets/city.png" alt="Collectivité" class="rounded-circle" width="250">
+              <div class="app__section__macaron">
+                Je suis une collectivité locale
+              </div>
+            </a>
           </div>
           <div class="col-2">
-            <img src="./assets/sport.png" alt="Club sportif" class="rounded-circle" width="250">
-            <div class="app__section__macaron">
-              Je suis un club sportif
-            </div>
+            <a @click="goTo('section_contact')" class="btn">
+              <img src="./assets/sport.png" alt="Club sportif" class="rounded-circle" width="250">
+              <div class="app__section__macaron">
+                Je suis un club sportif
+              </div>
+            </a>
           </div>
           <div class="col-2">
-            <img src="./assets/association.png" alt="Association" class="rounded-circle" width="250">
-            <div class="app__section__macaron">
-              Je suis une association
-            </div>
+            <a @click="goTo('section_contact')" class="btn">
+              <img src="./assets/association.png" alt="Association" class="rounded-circle" width="250">
+              <div class="app__section__macaron">
+                Je suis une association
+              </div>
+            </a>
           </div>
           <div class="col-2">
-            <img src="./assets/library.png" alt="Bibliothèque" class="rounded-circle" width="250">
-            <div class="app__section__macaron">
-              Je suis une bibliothèque
-            </div>
+            <a @click="goTo('section_contact')" class="btn">
+              <img src="./assets/library.png" alt="Bibliothèque" class="rounded-circle" width="250">
+              <div class="app__section__macaron">
+                Je suis une bibliothèque
+              </div>
+            </a>
           </div>
           <div class="col-2">
-            <img src="./assets/entertainment.png" alt="Centre de loisir" class="rounded-circle" width="250">
-            <div class="app__section__macaron">
-              Je suis un centre de loisir
-            </div>
+            <a @click="goTo('section_contact')" class="btn">
+              <img src="./assets/entertainment.png" alt="Centre de loisir" class="rounded-circle" width="250">
+              <div class="app__section__macaron">
+                Je suis un centre de loisir
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -368,14 +380,16 @@
                 </div>
               </a>
             </div>
-            <div class="col-4 text-center text-danger">
-              <img src="./assets/family.png" alt="Temps" width="250">
-              <div>
-                Je contribue
-              </div>
-              <div>
-                Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
-              </div>
+            <div class="col-4 text-center">
+              <a @click="goTo('section_contact')" class="btn p-0 text-danger">
+                <img src="./assets/family.png" alt="Temps" width="250">
+                <div>
+                  Je contribue
+                </div>
+                <div>
+                  Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
+                </div>
+              </a>
             </div>
           </div>
         </div>
