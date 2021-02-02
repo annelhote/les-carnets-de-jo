@@ -345,49 +345,45 @@
           Nous soutenir
         </div>
         <div class="app__section__cards__support mt-3">
-          <b-card-group deck>
-            <b-card
-                title="J'adhère"
-                img-src="./assets/five.png"
-                img-alt="Adhésion"
-                img-top
-                body-class="py-5 bg-danger text-light text-center">
-              <b-card-text>
-                Et je participe à la vie de l'association!
-                <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
-              </b-card-text>
-            </b-card>
-            <b-card
-                title="Je fais un don"
-                img-src="./assets/family.png"
-                img-alt="Don"
-                img-top
-                body-class="py-5 bg-danger text-light text-center">
-              <b-card-text>
-                Et je permets le développement des programmes de l'association
-                <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="stretched-link"></a>
-              </b-card-text>
-            </b-card>
-          </b-card-group>
+          <div class="row">
+            <div class="col-4 text-center">
+              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="text-danger">
+                <img src="./assets/five.png" alt="Adhésion" width="250">
+                <div>
+                  J'adhère
+                </div>
+                <div>
+                  Et je participe à la vie de l'association!
+                </div>
+              </a>
+            </div>
+            <div class="col-4 text-center">
+              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="text-danger">
+                <img src="./assets/family.png" alt="Don" width="250">
+                <div>
+                  Je fais un don
+                </div>
+                <div>
+                  Et je permets le développement des programmes de l'association
+                </div>
+              </a>
+            </div>
+            <div class="col-4 text-center text-danger">
+              <img src="./assets/family.png" alt="Temps" width="250">
+              <div>
+                Je contribue
+              </div>
+              <div>
+                Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           Une démarche collective et collaborative
           Les "carnets de Jo" sont le fruit d'un travail collaboratif avec des enseignants et des conseillers
           pédagogiques ou sportifs. Si vous aussi, vous souhaitez apporter votre contribution à nos prochains projets
           pédagogiques, contactez-nous !
-        </div>
-        <div>
-          <b-card
-              title="Je contribue"
-              img-src="./assets/family.png"
-              img-alt="Temps"
-              img-top
-              body-class="py-5 bg-danger text-light text-center">
-            <b-card-text>
-              Et j'anime des ateliers ou j'apporte mon expertise pédagogique.
-              <a href="" class="stretched-link"></a>
-            </b-card-text>
-          </b-card>
         </div>
       </div>
     </section>
