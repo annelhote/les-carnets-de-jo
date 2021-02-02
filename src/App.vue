@@ -47,32 +47,30 @@
         </b-nav-item>
       </b-nav>
     </div>
-    <section class="app__section app__section__odd row" ref="section_welcome">
-      <div class="col-6 d-flex">
-        <div class="w-50 text-center m-auto">
-          <div class="font-weight-bold">
-            Association d'intérêt général dédiée à l'éducation par le sport !
-          </div>
-          <div class="text-uppercase font-weight-bold mt-3">
-            <div>
-              #Apprendre
-            </div>
-            <div>
-              #Jouer
-            </div>
-            <div>
-              #Grandir
-            </div>
-          </div>
+    <section class="app__section app__section__odd row p-0" ref="section_welcome">
+      <div class="text-primary text-center w-100 my-5 font-weight-bolder">
+        <div class="h2">
+          Association d'intérêt général dédiée à l'éducation par le sport !
+        </div>
+        <div class="text-uppercase">
+          <span>
+            #Apprendre
+          </span>
+          <span>
+            #Jouer
+          </span>
+          <span>
+            #Grandir
+          </span>
         </div>
       </div>
-      <div class="col-6">
-        <img src="./assets/pencil_case.png" alt="Trousses et feutres" width="843">
+      <div class="w-100">
+        <img src="./assets/pencil_case.png" alt="Trousses et feutres" class="w-100">
       </div>
     </section>
-    <section class="app__section app__section__even row bg-warning justify-content-md-center" ref="section_why">
-      <div class="col-12">
-        <div class="app__section__title text-uppercase text-primary text-center">
+    <section class="app__section app__section__even row bg-warning justify-content-center text-center" ref="section_why">
+      <div class="col-6">
+        <div class="app__section__title text-uppercase text-primary">
           Pourquoi ?
         </div>
         <div class="app__section__content mt-3">
@@ -91,8 +89,8 @@
           l'éducation de demain.
         </div>
         <div class="row justify-content-center">
-          <div class="app__section__content text-center mt-3 col-6">
-            <div class="font-italic">
+          <div class="app__section__content text-center mt-3">
+            <div class="font-italic text-white quote">
               <font-awesome-icon icon="quote-left"></font-awesome-icon>
               L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
               et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
@@ -577,6 +575,10 @@ export default {
     a {
       color: #212529;
     }
+  }
+
+  .quote {
+    font-size: 32px;
   }
 }
 </style>
