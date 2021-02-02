@@ -251,6 +251,10 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="app__section app__section__even bg-warning row text-center" ref="section_pipelines">
+      <div class="col-12">
         <div class="app__section__title text-uppercase text-primary">
           Dans nos tuyaux
         </div>
@@ -279,7 +283,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row text-center" ref="section_intervention">
+    <section class="app__section app__section__odd row text-center" ref="section_intervention">
       <div class="col-12">
         <div class="app__section__title text-uppercase text-primary">
           Demander une intervention
