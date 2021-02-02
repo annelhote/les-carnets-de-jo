@@ -200,17 +200,23 @@
         <div class="row">
           <div class="col-4">
             <div>
-              <img src="./assets/programme_le_masque_et_la_plume.png" alt="Le masque et la plume" width="250" class="rounded-circle">
-              <div>
-                PROGRAMME "LE MASQUE ET LA PLUME"
+              <div class="app__section__macarons">
+                <img src="./assets/programme_le_masque_et_la_plume.png" alt="Le masque et la plume" width="250" class="rounded-circle">
+                <div class="app__section__macaron m-auto text-uppercase">
+                  <div class="app__section__macaron__content">
+                    #apprendre<br>
+                    #imaginer<br>
+                    #créer
+                  </div>
+                </div>
+              </div>
+              <div class="text-uppercase">
+                Programme "Le masque et la plume"
               </div>
               <div>
                 Des ateliers éducatifs et culturels autour d’ouvrages jeunesse sur les thèmes du sport et de ses
                 valeurs, nous proposons des exploitations pédagogiques développées avec les enseignants et des
-                concours d’albums jeunesse par équipes (écriture et illustrations).<br><br>
-                #APPRENDRE<br>
-                #IMAGINER<br>
-                #CREER
+                concours d’albums jeunesse par équipes (écriture et illustrations).
               </div>
             </div>
           </div>
@@ -289,7 +295,7 @@
             mais vous ne savez pas par où commencer ?
           </div>
         </div>
-        <div class="app__section__cards__contribution row mt-3">
+        <div class="app__section__cards__contribution app__section__macarons row mt-3">
           <div class="col-2">
             <img src="./assets/school.png" alt="Ecole" class="rounded-circle" width="250">
             <div class="app__section__macaron">
@@ -362,7 +368,6 @@
         </div>
         <div>
           Une démarche collective et collaborative
-
           Les "carnets de Jo" sont le fruit d'un travail collaboratif avec des enseignants et des conseillers
           pédagogiques ou sportifs. Si vous aussi, vous souhaitez apporter votre contribution à nos prochains projets
           pédagogiques, contactez-nous !
@@ -506,15 +511,27 @@ export default {
       font-size: 5rem;
     }
 
+    &__macarons {
+      height: 250px
+    }
+
     &__macaron {
       background-color: transparent;
       border-radius: 50%;
       color: transparent;
       height: 250px;
-      line-height: 250px;
-      position: absolute;
-      top: 0;
+      position: relative;
+      top: -250px;
       width: 250px;
+
+      &__content {
+        bottom: 0;
+        left: 0;
+        margin-top: -50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
 
       &:hover {
         background-color: black;
