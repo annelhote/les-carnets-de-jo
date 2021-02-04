@@ -488,7 +488,6 @@ export default {
   name: 'app',
   data () {
     return {
-      isShrinked: false,
       form: {
         checked: [],
         email: '',
@@ -496,12 +495,17 @@ export default {
         name: '',
         object: '',
         text: ''
-      }
+      },
+      isShrinked: false
     }
   },
   methods: {
     handleScroll () {
-      this.$set(this, 'isShrinked', window.scrollY > 40)
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        this.isShrinked = true
+      } else {
+        this.isShrinked = false
+      }
     },
     goTo(refName) {
       const element = this.$refs[refName]
@@ -522,6 +526,7 @@ export default {
 
   &__nav {
     height: 150px;
+    transition: 0.4s;
 
     .nav-link {
       color: white;
