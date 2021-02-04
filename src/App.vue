@@ -117,10 +117,10 @@
         </div>
         <div class="mb-3">
           C’est ainsi que la collection de livres jeunesse « Les incroyables rencontres de Jo » est née.
-          <span class="text-danger">
+          <h3 class="d-inline text-danger font-weight-bold">
             Chaque tome allie le plaisir des premières lectures avec la découverte d’un grand champion français et
             d’une valeur du sport.
-          </span>
+          </h3>
           <br>
           <br>
           L’enthousiasme rencontré auprès des lecteurs et les sollicitations de plusieurs enseignants lui donnent
