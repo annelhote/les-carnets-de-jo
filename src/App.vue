@@ -90,15 +90,15 @@
         </div>
         <div class="row justify-content-center">
           <div class="app__section__content text-center mt-3">
-            <div class="font-italic text-white quote">
+            <h3 class="font-italic text-white">
               <font-awesome-icon icon="quote-left"></font-awesome-icon>
               L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
               et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
               du respect de la jeunesse.<br>
               Ces deux éléments participent à créer une société plus juste et fraternelle.
               <font-awesome-icon icon="quote-right"></font-awesome-icon>
-            </div>
-            <hr width="50" color="black">
+            </h3>
+            <hr width="50" class="text-black">
             <div class="mt-3">
               Nelson Mandela
             </div>
@@ -116,9 +116,11 @@
           une belle histoire de sport à sa nièce. Ne le trouvant pas en librairie, elle décide de l’écrire elle-même...
         </div>
         <div class="mb-3">
-          C’est ainsi que la collection de livres jeunesse « Les incroyables rencontres de Jo » est née. Chaque tome
-          allie le plaisir des premières lectures avec la découverte d’un grand champion français et d’une valeur du
-          sport.
+          C’est ainsi que la collection de livres jeunesse « Les incroyables rencontres de Jo » est née.
+          <span class="text-danger">
+            Chaque tome allie le plaisir des premières lectures avec la découverte d’un grand champion français et
+            d’une valeur du sport.
+          </span>
           <br>
           <br>
           L’enthousiasme rencontré auprès des lecteurs et les sollicitations de plusieurs enseignants lui donnent
@@ -576,10 +578,6 @@ export default {
     a {
       color: #212529;
     }
-  }
-
-  .quote {
-    font-size: 32px;
   }
 }
 </style>
