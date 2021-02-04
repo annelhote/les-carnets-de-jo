@@ -270,14 +270,14 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even bg-warning row text-center" ref="section_pipelines">
-      <div class="col-12">
+    <section class="app__section app__section__even bg-warning row justify-content-center text-center" ref="section_pipelines">
+      <div class="col-6">
         <div class="app__section__title text-uppercase text-primary">
           Dans nos tuyaux
         </div>
         <div class="row">
           Nous souhaitons développer et offrir d’autres activités pour apprendre en s’amusant autour du sport et de ses valeurs :
-          <ul class="text-left">
+          <ul class="text-left app__section__list mt-3">
             <li>
               Réaliser et mettre à disposition des carnets pédagogiques interdisciplinaires « clé en main » adaptés par
               tranche d’âge et développés avec des enseignants et ainsi proposer aux éducateurs et parents des outils
@@ -540,6 +540,12 @@ export default {
     &__title {
       font-family: 'Mouse Memoirs', sans-serif;
       font-size: 5rem;
+    }
+
+    &__list {
+      li {
+        margin-bottom: 10px;
+      }
     }
 
     &__macarons {
