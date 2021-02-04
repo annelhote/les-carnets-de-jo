@@ -106,8 +106,8 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__odd row" ref="section_history">
-      <div class="col-12">
+    <section class="app__section app__section__odd row justify-content-center text-center" ref="section_history">
+      <div class="col-6">
         <div class="app__section__title text-uppercase text-primary text-center">
           L'histoire
         </div>
@@ -185,8 +185,8 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__odd row text-center" ref="section_actions">
-      <div class="col-12">
+    <section class="app__section app__section__odd row  justify-content-center text-center" ref="section_actions">
+      <div class="col-8">
         <div class="app__section__title text-uppercase text-primary">
           Nos actions
         </div>
@@ -201,17 +201,8 @@
         <div class="row">
           <div class="col-4">
             <div>
-              <div class="app__section__macarons">
-                <img src="./assets/programme_le_masque_et_la_plume.png" alt="Le masque et la plume" width="250" class="rounded-circle">
-                <div class="app__section__macaron m-auto text-uppercase">
-                  <div class="app__section__macaron__content">
-                    #apprendre<br>
-                    #imaginer<br>
-                    #créer
-                  </div>
-                </div>
-              </div>
-              <div class="text-uppercase">
+              <img src="./assets/programme_le_masque_et_la_plume.png" alt="Le masque et la plume" width="250" class="rounded-circle">
+              <div class="text-uppercase mt-3 font-weight-bold">
                 Programme "Le masque et la plume"
               </div>
               <div>
@@ -219,35 +210,60 @@
                 valeurs, nous proposons des exploitations pédagogiques développées avec les enseignants et des
                 concours d’albums jeunesse par équipes (écriture et illustrations).
               </div>
+              <div class="text-uppercase font-weight-bold text-danger mt-3">
+                <div>
+                  #apprendre
+                </div>
+                <div>
+                  #imaginer
+                </div>
+                <div>
+                  #créer
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-4">
             <div>
               <img src="./assets/programme_le_corps_et_la_tete.png" alt="Le corps et la tête" width="250" class="rounded-circle">
-              <div>
-                PROGRAMME "LE CORPS ET LA TÊTE"
+              <div class="text-uppercase mt-3 font-weight-bold">
+                Programme "Le corps et la tête"
               </div>
               <div>
                 Plusieurs ateliers dynamiques alliant des temps de pratiques d'initiations sportive et des activités
-                éducatives : dictées sportives, mental-run...<br><br>
-                #BOUGER<br>
-                #S'AMUSER<br>
-                #S'EVEILLER
+                éducatives : dictées sportives, mental-run...
+              </div>
+              <div class="text-uppercase font-weight-bold text-success mt-3">
+                <div>
+                  #bouger
+                </div>
+                <div>
+                  #s'amuser
+                </div>
+                <div>
+                  #s'éveiller
+                </div>
               </div>
             </div>
           </div>
           <div class="col-4">
             <div>
               <img src="./assets/programme_un_champion_a_l_ecole.png" alt="Un champion à l'école" width="250" class="rounded-circle">
-              <div>
-                PROGRAMME "UN CHAMPION A L'ECOLE"
+              <div class="text-uppercase mt-3 font-weight-bold">
+                Programme "Un champion à l'école"
               </div>
               <div>
                 Des athlètes de haut niveau interviennent pour transmettre aux enfants les clés de leur parcours. Ces
                 échanges sont aussi l'occasion d'aborder des sujets de société et de citoyenneté en rapport avec le
-                sport : la santé, l'inclusion, la mixité hommes/femmes, la lutte contre les discriminations...<br><br>
-                #INSPIRER<br>
-                #TRANSMETTRE
+                sport : la santé, l'inclusion, la mixité hommes/femmes, la lutte contre les discriminations...
+              </div>
+              <div class="text-uppercase font-weight-bold text-primary mt-3">
+                <div>
+                  #inspirer
+                </div>
+                <div>
+                  #transmettre
+                </div>
               </div>
             </div>
           </div>
