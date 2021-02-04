@@ -316,11 +316,11 @@
             mais vous ne savez pas par où commencer ?
           </div>
         </div>
-        <div class="app__section__cards__contribution app__section__macarons row mt-3">
+        <div class="app__section__cards__contribution row mt-5 justify-content-center">
           <div class="col-2">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/school.png" alt="Ecole" class="rounded-circle" width="250">
-              <div class="app__section__macaron">
+              <div class="mt-3 text-danger">
                 Je suis une école
               </div>
             </a>
@@ -328,7 +328,7 @@
           <div class="col-2">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/city.png" alt="Collectivité" class="rounded-circle" width="250">
-              <div class="app__section__macaron">
+              <div class="mt-3 text-success">
                 Je suis une collectivité locale
               </div>
             </a>
@@ -336,15 +336,17 @@
           <div class="col-2">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/sport.png" alt="Club sportif" class="rounded-circle" width="250">
-              <div class="app__section__macaron">
+              <div class="mt-3 text-primary">
                 Je suis un club sportif
               </div>
             </a>
           </div>
+        </div>
+        <div class="app__section__cards__contribution row my-3 justify-content-center">
           <div class="col-2">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/association.png" alt="Association" class="rounded-circle" width="250">
-              <div class="app__section__macaron">
+              <div class="mt-3 text-danger">
                 Je suis une association
               </div>
             </a>
@@ -352,7 +354,7 @@
           <div class="col-2">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/library.png" alt="Bibliothèque" class="rounded-circle" width="250">
-              <div class="app__section__macaron">
+              <div class="mt-3 text-success">
                 Je suis une bibliothèque
               </div>
             </a>
@@ -360,7 +362,7 @@
           <div class="col-2">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/entertainment.png" alt="Centre de loisir" class="rounded-circle" width="250">
-              <div class="app__section__macaron">
+              <div class="mt-3 text-primary">
                 Je suis un centre de loisir
               </div>
             </a>
@@ -368,7 +370,7 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row" ref="section_join">
+    <section class="app__section app__section__even row bg-warning" ref="section_join">
       <div class="col-12">
         <div class="app__section__title text-uppercase text-center text-primary">
           Nous soutenir
