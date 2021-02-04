@@ -141,17 +141,17 @@
     </section>
     <section class="app__section app__section__even bg-warning row" ref="section_team">
       <div class="col-12">
-        <div class="app__section__title text-uppercase text-primary text-center">
+        <div class="app__section__title text-uppercase text-light text-center">
           L'équipe
         </div>
-        <div class="row text-center">
-          <div class="col-6">
+        <div class="row text-center justify-content-center">
+          <div class="col-4">
             <img src="./assets/astrid_guyart.png" alt="Astrid Guyard" class="rounded-circle" width="250">
             <div class="mt-3">
-              <div class="font-weight-bold">
+              <h3 class="m-0 font-weight-bold text-white">
                 Astrid GUYART
-              </div>
-              <div class="mt-2 font-weight-bold">
+              </h3>
+              <div class="font-weight-bold text-uppercase text-white">
                 Présidente et co-fondatrice de l'association
               </div>
               <div class="mt-2">
@@ -164,13 +164,13 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-4">
             <img src="./assets/julie_lavet.png" alt="Julie Lavet" class="rounded-circle" width="250">
             <div class="mt-3">
-              <div class="font-weight-bold">
+              <h3 class="m-0 font-weight-bold text-white">
                 Julie LAVET
-              </div>
-              <div class="mt-2 font-weight-bold">
+              </h3>
+              <div class="font-weight-bold text-uppercase text-white">
                 Trésorière et co-fondatrice de l'association
               </div>
               <div class="mt-2">
