@@ -98,6 +98,7 @@
               Ces deux éléments participent à créer une société plus juste et fraternelle.
               <font-awesome-icon icon="quote-right"></font-awesome-icon>
             </div>
+            <hr width="50" color="black">
             <div class="mt-3">
               Nelson Mandela
             </div>
