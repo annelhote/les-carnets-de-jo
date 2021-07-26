@@ -428,11 +428,12 @@
         <div class="app__section__title text-uppercase text-primary">
           Nous contacter
         </div>
-        <b-form>
+        <b-form @submit.prevent="sendEmail">
           <b-form-group id="input-group-2" label-for="input-2">
             <b-form-input
               id="input-2"
               v-model="form.name"
+              name="name"
               required
               placeholder="Nom *"
             ></b-form-input>
@@ -441,6 +442,7 @@
             <b-form-input
               id="input-1"
               v-model="form.email"
+              name="email"
               type="email"
               required
               placeholder="Adresse email *"
@@ -450,6 +452,7 @@
             <b-form-input
               id="input-3"
               v-model="form.object"
+              name="object"
               required
               placeholder="Objet *"
             ></b-form-input>
@@ -457,7 +460,8 @@
           <b-form-group>
             <b-form-textarea
               id="textarea"
-              v-model="form.text"
+              v-model="form.message"
+              name="message"
               placeholder="Message"
               rows="3"
               max-rows="6"
@@ -484,17 +488,18 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com'
+import { config } from './config.js'
+
 export default {
   name: 'app',
   data () {
     return {
       form: {
-        checked: [],
         email: '',
-        food: null,
+        message: '',
         name: '',
-        object: '',
-        text: ''
+        object: ''
       },
       isShrinked: false
     }
@@ -510,6 +515,18 @@ export default {
     goTo(refName) {
       const element = this.$refs[refName]
       element.scrollIntoView({ behavior: 'smooth' })
+    },
+    sendEmail(e) {
+      emailjs.sendForm(config.EMAILJS_SERVICE_ID, config.EMAILJS_TEMPLATE_ID, e.target, config.EMAILJS_USER_ID)
+          .then(() => {
+            this.form.email = ''
+            this.form.message = ''
+            this.form.name = ''
+            this.form.object = ''
+          }, error => {
+            // eslint-disable-next-line
+            console.log('FAILED...', error)
+          })
     }
   },
   created () {
