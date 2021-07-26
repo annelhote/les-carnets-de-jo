@@ -4205,6 +4205,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emailjs-com@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "emailjs-com@npm:3.2.0"
+  checksum: c6d0a1d60786405482928efcb33e9fda9e1c131a0380a1861b73a1f1139923794fbbb6679d83c632b4a2cf2d2dbe08541dd68db61ce78db6ed28b6ed68b4e00f
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^7.0.1":
   version: 7.0.3
   resolution: "emoji-regex@npm:7.0.3"
@@ -6953,6 +6960,7 @@ fsevents@~2.1.2:
     bootstrap: ^4.5.2
     bootstrap-vue: ^2.17.3
     core-js: ^2.6.5
+    emailjs-com: ^3.2.0
     eslint: ^5.16.0
     eslint-plugin-vue: ^5.0.0
     node-sass: ^4.14.1
