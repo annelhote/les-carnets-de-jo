@@ -2,7 +2,10 @@
   <div id="app" class="app container-fluid">
     <div class="app__nav row sticky-top bg-primary" :class="{ 'shrinked': isShrinked }">
       <div class="col-4 h-100">
-        <img src="./assets/logo.png" alt="Les Carnets de Jo" class="pl-5 h-100">
+        <img src="./assets/logo.png" alt="Les Carnets de Jo" class="pl-5 h-75">
+        <div class="text-white app__nav__title">
+          Association d'intérêt général dédiée à l'éducation par le sport !
+        </div>
       </div>
       <b-nav align="center" class="col-8 text-center text-uppercase text-white m-auto">
         <b-nav-item>
@@ -545,12 +548,20 @@ export default {
     height: 150px;
     transition: 0.4s;
 
+    &__title {
+      font-size: 1rem;
+    }
+
     .nav-link {
       color: white;
     }
 
     &.shrinked {
       height: 75px;
+
+      .app__nav__title {
+        font-size: 0.6rem;
+      }
 
       .nav-link {
         font-size: smaller;
