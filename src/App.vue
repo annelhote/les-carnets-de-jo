@@ -381,7 +381,7 @@
         <div class="app__section__cards__support mt-3">
           <div class="row">
             <div class="col-4 text-center">
-              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="text-danger">
+              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="text-link">
                 <img src="./assets/five.png" alt="Adhésion" width="250">
                 <div>
                   J'adhère
@@ -392,8 +392,8 @@
               </a>
             </div>
             <div class="col-4 text-center">
-              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="text-danger">
-                <img src="./assets/family.png" alt="Don" width="250">
+              <a href="https://www.helloasso.com/associations/les-carnets-de-jo" target="_blank" class="text-link">
+                <img src="./assets/hand.png" alt="Don" width="250">
                 <div>
                   Je fais un don
                 </div>
@@ -403,7 +403,7 @@
               </a>
             </div>
             <div class="col-4 text-center">
-              <a @click="goTo('section_contact')" class="btn p-0 text-danger">
+              <a @click="goTo('section_contact')" class="btn btn-link p-0 text-link">
                 <img src="./assets/family.png" alt="Temps" width="250">
                 <div>
                   Je contribue
@@ -415,7 +415,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="col-8 offset-2 text-center mt-3">
           Une démarche collective et collaborative
           Les "carnets de Jo" sont le fruit d'un travail collaboratif avec des enseignants et des conseillers
           pédagogiques ou sportifs. Si vous aussi, vous souhaitez apporter votre contribution à nos prochains projets
@@ -542,6 +542,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.text-link {
+  color: #212529;
+}
+
 .app {
 
   &__nav {
@@ -630,10 +634,6 @@ export default {
       left: 530px;
       position: absolute;
       top: 59px;
-    }
-
-    a {
-      color: #212529;
     }
   }
 }
