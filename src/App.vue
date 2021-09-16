@@ -1,54 +1,59 @@
 <template>
   <div id="app" class="app container-fluid">
     <div class="app__nav row sticky-top bg-primary" :class="{ 'shrinked': isShrinked }">
-      <div class="col-4 h-100">
+      <div class="col-4 col-sm-6 h-100">
         <img src="./assets/logo.png" alt="Les Carnets de Jo" class="pl-5 h-75">
         <div class="text-white app__nav__title">
           Association d'intérêt général dédiée à l'éducation par le sport !
         </div>
       </div>
-      <b-nav align="center" class="col-8 text-center text-uppercase text-white m-auto">
-        <b-nav-item>
-          <a @click="goTo('section_welcome')">
-            Accueil
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_why')">
-            Pourquoi ?
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_history')">
-            L'histoire
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_team')">
-            L'équipe
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_actions')">
-            Nos actions
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_intervention')">
-            Demander une intervention
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_join')">
-            Nous soutenir
-          </a>
-        </b-nav-item>
-        <b-nav-item>
-          <a @click="goTo('section_contact')">
-            Nous contacter
-          </a>
-        </b-nav-item>
-      </b-nav>
+      <div class="col-sm-6 d-block d-md-none text-white text-right">
+        <font-awesome-icon icon="bars"></font-awesome-icon>
+      </div>
+      <div class="col-8 d-none d-md-block">
+        <b-nav align="center" class="text-center text-uppercase text-white m-auto">
+          <b-nav-item>
+            <a @click="goTo('section_welcome')">
+              Accueil
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_why')">
+              Pourquoi ?
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_history')">
+              L'histoire
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_team')">
+              L'équipe
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_actions')">
+              Nos actions
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_intervention')">
+              Demander une intervention
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_join')">
+              Nous soutenir
+            </a>
+          </b-nav-item>
+          <b-nav-item>
+            <a @click="goTo('section_contact')">
+              Nous contacter
+            </a>
+          </b-nav-item>
+        </b-nav>
+      </div>
     </div>
     <section class="app__section app__section__odd row p-0" ref="section_welcome">
       <div class="text-primary text-center w-100 my-5 font-weight-bolder">
@@ -72,49 +77,47 @@
       </div>
     </section>
     <section class="app__section app__section__even row bg-warning justify-content-center text-center" ref="section_why">
-      <div class="col-6">
-        <div class="app__section__title text-uppercase text-primary">
+      <div class="col-8 col-sm-12">
+        <div class="app__section__title text-uppercase text-white">
           Pourquoi ?
         </div>
-        <div class="app__section__content mt-3">
+        <div class="app__section__content mt-3 text-center">
           Convaincus que le sport est source d'inspiration et d’épanouissement de la jeunesse,
           Les Carnets de Jo est une association qui met en place des actions et développe des outils pédagogiques
           et ludiques autour du sport pour favoriser la réussite éducative et l’insertion sociale des jeunes,
-          particulièrement dans les quartiers prioritaires de la politique de la ville.<br><br>
+          particulièrement dans les quartiers prioritaires de la politique de la ville.
+          <br><br>
           Grâce à des bénévoles d’horizons différents et à un réseau d’athlètes français qui ont en commun
           la passion du sport et la conviction que le sport et ses valeurs sont de formidables leviers pour
           renforcer l’égalité des chances et la cohésion sociale, l'association a pour vocation de développer
           l'impact éducatif du sport et s’adresse à la jeunesse pour lui donner envie de bouger mais aussi
-          d’apprendre, de créer, de s’éveiller et de grandir grâce au sport.<br><br>
+          d’apprendre, de créer, de s’éveiller et de grandir grâce au sport.
+          <br><br>
           Conscients que le sport ne peut pas tout résoudre, qu'il n'est ni magique pour la société, ni éducatif par
           nature, nous faisons le pari qu'avec de l'énergie positive, un réseau expérimenté, des outils innovants et des
           expérimentations sur le terrain, nous participerons à révéler son potentiel éducatif comme moyen au service de
           l'éducation de demain.
-        </div>
-        <div class="row justify-content-center">
-          <div class="app__section__content text-center mt-3">
-            <h3 class="font-italic text-white">
-              <font-awesome-icon icon="quote-left"></font-awesome-icon>
-              L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
-              et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
-              du respect de la jeunesse.<br>
-              Ces deux éléments participent à créer une société plus juste et fraternelle.
-              <font-awesome-icon icon="quote-right"></font-awesome-icon>
-            </h3>
-            <hr width="50" class="text-black">
-            <div class="mt-3">
-              Nelson Mandela
-            </div>
+          <h3 class="font-italic text-white">
+            <font-awesome-icon icon="quote-left"></font-awesome-icon>
+            L'éducation est une arme puissante pour faire évoluer les mentalités et transcender les différences,
+            et le sport est une source d'inspiration, de dépassement, de tolérance et d'apprentissage
+            du respect de la jeunesse.<br><br>
+            Ces deux éléments participent à créer une société plus juste et fraternelle.
+            <font-awesome-icon icon="quote-right"></font-awesome-icon>
+          </h3>
+          <hr style="width:50px" class="text-black">
+          <div class="mt-3">
+            Nelson Mandela
           </div>
         </div>
       </div>
     </section>
     <section class="app__section app__section__odd row justify-content-center text-center" ref="section_history">
-      <div class="col-6">
+      <div class="col-8 col-sm-12">
         <div class="app__section__title text-uppercase text-primary text-center">
           L'histoire
         </div>
-        <div>
+        <div class="mt-3">
           Astrid GUYART, escrimeuse olympique, vice-championne du monde de fleuret, souhaitait offrir un livre racontant
           une belle histoire de sport à sa nièce. Ne le trouvant pas en librairie, elle décide de l’écrire elle-même...
         </div>
@@ -124,14 +127,12 @@
             Chaque tome allie le plaisir des premières lectures avec la découverte d’un grand champion français et
             d’une valeur du sport.
           </h3>
-          <br>
-          <br>
+          <br><br>
           L’enthousiasme rencontré auprès des lecteurs et les sollicitations de plusieurs enseignants lui donnent
           l’envie de mettre plus largement l’univers du sport, de l’olympisme et de ses valeurs au service de
           l’épanouissement et de la réussite des enfants. Elle fonde « Les Carnets de Jo », association d’intérêt
           général dédiée à l’éducation par le sport.
-          <br>
-          <br>
+          <br><br>
           Si l'objectif initial de la collection "Les Incroyables Rencontres de Jo" était de donner envie aux enfants
           de s'épanouir et de grandir grâce à la pratique d'une discipline sportive, l'objectif de l'association "Les
           Carnets de Jo" est de mettre le pouvoir du sport au service de la réussite éducative de la prochaine
@@ -142,13 +143,13 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even bg-warning row" ref="section_team">
-      <div class="col-12">
+    <section class="app__section app__section__even bg-warning row justify-content-center" ref="section_team">
+      <div class="col-8 col-sm-12">
         <div class="app__section__title text-uppercase text-light text-center">
           L'équipe
         </div>
-        <div class="row text-center justify-content-center">
-          <div class="col-4">
+        <div class="row text-center justify-content-center mt-3">
+          <div class="col-6">
             <img src="./assets/astrid_guyart.png" alt="Astrid Guyard" class="rounded-circle" width="250">
             <div class="mt-3">
               <h3 class="m-0 font-weight-bold text-white">
@@ -167,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-6">
             <img src="./assets/julie_lavet.png" alt="Julie Lavet" class="rounded-circle" width="250">
             <div class="mt-3">
               <h3 class="m-0 font-weight-bold text-white">
@@ -189,11 +190,11 @@
       </div>
     </section>
     <section class="app__section app__section__odd row  justify-content-center text-center" ref="section_actions">
-      <div class="col-8">
+      <div class="col-8 col-sm-12">
         <div class="app__section__title text-uppercase text-primary">
           Nos actions
         </div>
-        <div class="app__section__subtitle font-weight-bold mb-4">
+        <div class="app__section__subtitle font-weight-bold mt-3">
           Nous intervenons auprès d’élèves de 6 à 11 ans en proposant, en collaboration avec les enseignants, des
           actions sur-mesure et des supports pédagogiques ludiques d’éducation par le sport.<br><br>
           Nous sommes convaincus qu'il existe plusieurs manières de réussir, des parcours différents, des scolarités
@@ -201,7 +202,7 @@
           et de sensibiliser la jeunesse sur le fait que l’on peut avoir des qualités insoupçonnées, qui ne demandent
           qu’à être transposées dans son parcours scolaire et mises à profit de tout au long de sa vie.
         </div>
-        <div class="row">
+        <div class="row mt-3">
           <div class="col-4">
             <div>
               <img src="./assets/programme_le_masque_et_la_plume.png" alt="Le masque et la plume" width="250" class="rounded-circle">
@@ -274,13 +275,13 @@
       </div>
     </section>
     <section class="app__section app__section__even bg-warning row justify-content-center text-center" ref="section_pipelines">
-      <div class="col-6">
-        <div class="app__section__title text-uppercase text-primary">
+      <div class="col-8 col-sm-12">
+        <div class="app__section__title text-uppercase text-white">
           Dans nos tuyaux
         </div>
-        <div class="row">
+        <div class="row mt-3">
           Nous souhaitons développer et offrir d’autres activités pour apprendre en s’amusant autour du sport et de ses valeurs :
-          <ul class="text-left app__section__list mt-3">
+          <ul class="text-left app__section__list mt-3 mb-0">
             <li>
               Réaliser et mettre à disposition des carnets pédagogiques interdisciplinaires « clé en main » adaptés par
               tranche d’âge et développés avec des enseignants et ainsi proposer aux éducateurs et parents des outils
@@ -303,12 +304,12 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__odd row text-center" ref="section_intervention">
-      <div class="col-12">
+    <section class="app__section app__section__odd row text-center justify-content-center" ref="section_intervention">
+      <div class="col-8 col-sm-12">
         <div class="app__section__title text-uppercase text-primary">
           Demander une intervention
         </div>
-        <div class="app__section__subtitle font-weight-bold">
+        <div class="app__section__subtitle font-weight-bold mt-3">
           <div>
             Une idée vous trotte dans la tête...
           </div>
@@ -320,7 +321,7 @@
           </div>
         </div>
         <div class="app__section__cards__contribution row mt-5 justify-content-center">
-          <div class="col-2">
+          <div class="col-4">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/school.png" alt="Ecole" class="rounded-circle" width="250">
               <div class="mt-3 text-danger">
@@ -328,7 +329,7 @@
               </div>
             </a>
           </div>
-          <div class="col-2">
+          <div class="col-4">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/city.png" alt="Collectivité" class="rounded-circle" width="250">
               <div class="mt-3 text-success">
@@ -336,7 +337,7 @@
               </div>
             </a>
           </div>
-          <div class="col-2">
+          <div class="col-4">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/sport.png" alt="Club sportif" class="rounded-circle" width="250">
               <div class="mt-3 text-primary">
@@ -345,8 +346,8 @@
             </a>
           </div>
         </div>
-        <div class="app__section__cards__contribution row my-3 justify-content-center">
-          <div class="col-2">
+        <div class="app__section__cards__contribution row mt-3 justify-content-center">
+          <div class="col-4">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/association.png" alt="Association" class="rounded-circle" width="250">
               <div class="mt-3 text-danger">
@@ -354,7 +355,7 @@
               </div>
             </a>
           </div>
-          <div class="col-2">
+          <div class="col-4">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/library.png" alt="Bibliothèque" class="rounded-circle" width="250">
               <div class="mt-3 text-success">
@@ -362,7 +363,7 @@
               </div>
             </a>
           </div>
-          <div class="col-2">
+          <div class="col-4">
             <a @click="goTo('section_contact')" class="btn">
               <img src="./assets/entertainment.png" alt="Centre de loisir" class="rounded-circle" width="250">
               <div class="mt-3 text-primary">
@@ -373,9 +374,9 @@
         </div>
       </div>
     </section>
-    <section class="app__section app__section__even row bg-warning" ref="section_join">
-      <div class="col-12">
-        <div class="app__section__title text-uppercase text-center text-primary">
+    <section class="app__section app__section__even row bg-warning justify-content-center" ref="section_join">
+      <div class="col-8 col-sm-12">
+        <div class="app__section__title text-uppercase text-center text-white">
           Nous soutenir
         </div>
         <div class="app__section__cards__support mt-3">
@@ -424,10 +425,10 @@
       </div>
     </section>
     <section class="app__section app__section__odd row" ref="section_contact">
-      <div class="col-6">
+      <div class="col-6 col-sm-12">
         <img src="./assets/basket.png" alt="Baskets" class="w-100">
       </div>
-      <div class="col-6">
+      <div class="col-6 col-sm-12">
         <div class="app__section__title text-uppercase text-primary">
           Nous contacter
         </div>
@@ -476,7 +477,7 @@
         </b-form>
       </div>
     </section>
-    <footer class="app__footer row bg-success text-center mt-5 p-3">
+    <footer class="app__footer row bg-success text-center p-3">
       <div class="col-12">
         <img src="./assets/logo-footer.png" alt="Jo" width="50" class="app__footer__logo">
         LES CARNETS DE JO<br><br>
